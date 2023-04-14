@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen en línea</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        #question-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #question {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            color: #232323;
+        }
+
+        #answers {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #answers li {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #232323;
+        }
+
+        #answers p {
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+        }
+
+        #answers p:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        #answers p:hover:before {
+            border-color: #2196f3;
+        }
+
+        #answers p:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #2196f3;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        #answers input[type="radio"] {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #answers input[type="radio"]:checked + p:after {
+            opacity: 1;
+        }
+
+        #submit-btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #2196f3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        #submit-btn:hover {
+            background-color: #0d8bf3;
+        }
+
+        /* Estilo para los elementos de radio */
+        input[type="radio"] {
+            display: none;
+        }
+        input[type="radio"] + p:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid #666;
+            background-color: #fff;
+        }
+        input[type="radio"]:checked + p:before {
+            content: "\f192";
+            font-family: "FontAwesome";
+            color: #fff;
+            background-color: #f44336;
+            border-color: #f44336;
+        }
+
+        /* Estilo para los elementos de checkbox */
+        input[type="checkbox"] {
+            display: none;
+        }
+        input[type="checkbox"] + p:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            border-radius: 2px;
+            border: 2px solid #666;
+            background-color: #fff;
+        }
+        input[type="checkbox"]:checked + p:before {
+            content: "\f00c";
+            font-family: "FontAwesome";
+            color: #fff;
+            background-color: #4caf50;
+            border-color: #4caf50;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="question-container">
+        <h1 id="question"></h1>
+        <div id="answers"></div>
+        <button id="submit-btn">Submit</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js?v=1" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" async>
+
+        $(async function(){
+            const url = 'https://example.com/api/questions'; // Coloque aquí la URL de su API
+            const questionContainer = document.querySelector('#question-container');
+            const questionEl = document.querySelector('#question');
+            const answersEl = document.querySelector('#answers');
+            const submitBtn = document.querySelector('#submit-btn');
+
+            let currentQuestion = 0;
+            let quizzes = [];
+            let quizzesFiles = ['Test1.json', 'Test2.json', 'Test3.json', 'Test4.json', 'Test5.json', 'Test6.json' ]
+
+            await quizzesFiles.forEach(async p => {
+                try {
+                    let result = await fetch('https://raw.githubusercontent.com/CFFreire/Quizzes/main/' + p, 
+                        { 
+                            'mode': "cors", 
+                            'headers': { 
+                                'Access-Control-Allow-Origin':'*', 
+                                "Content-Type": "application/json" 
+                            }
+                        });
+                    result = await result.json();
+                    quizzes.push(result);
+                } catch (error) {
+                }
+            });
+
+            let questions = quizzes[0];
+            
+            showQuestion();
+
+            function showQuestion() {
+                const question = questions.results[currentQuestion].prompt.question;
+                const answers = questions.results[currentQuestion].prompt.answers;
+                const correctAnswers = questions.results[currentQuestion].correct_response.length;
+                questionEl.innerHTML = question;
+                answersEl.innerHTML = '';
+                for (let i = 0; i < answers.length; i++) {
+                    answersEl.innerHTML += '<input type="' + (correctAnswers == 1 ? 'radio' : 'checkbox') + '" name="selectedAnswer" value="' + i + '"/> ' + answers[i];
+                }
+            }
+
+            submitBtn.addEventListener('click', () => {
+                const selectedAnswer = document.querySelector('input[name="answer"]:checked').value;
+                const correctAnswers = questions.correct_response[currentQuestion].correct_response;
+                
+                if (selectedAnswer == correctAnswers[0]) {
+                    alert('¡Respuesta correcta!');
+                } else {
+                    alert('Respuesta incorrecta. Intente nuevamente.');
+                }
+                
+                currentQuestion++;
+                
+                if (currentQuestion < questions.length) {
+                    showQuestion();
+                } else {
+                    questionContainer.innerHTML = '<h1>¡Examen completado!</h1>';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
