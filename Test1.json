@@ -1,0 +1,1352 @@
+{
+    "count": 50,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 40524630,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Is MongoDB a NoSQL database?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Yes</p>",
+                    "<p>No</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524632,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Why is MongoDB a NoSQL database?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Because MongoDB does not utilize tables, rows and columns to organize data.</p>",
+                    "<p> Because MongoDB uses a structured way to store and organize data.</p>",
+                    "<p>Because MongoDB uses tables, rows and columns to organize data.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524634,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select true statements regarding MongoDB. Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>MongoDB database organizes documents in rows and columns.</p>",
+                    "<p>Documents in MongoDB are organized into collections.</p>",
+                    "<p>MongoDB is a NoSQL database that uses documents to store data in an organized way.</p>"
+                ]
+            },
+            "correct_response": [
+                "b",
+                "c"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524636,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>How does the document relate to the collection in MongoDB? Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Collections consists of one or many documents.</p>",
+                    "<p>Collections are tables of documents.</p>",
+                    "<p>Documents consist of collections.</p>",
+                    "<p>Documents are organized into collections.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "d"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524638,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select true statement(s) regarding to the role of fields and values in a MongoDB document. Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>A field is a unique identifier for a specific data point.</p>",
+                    "<p>You can have duplicate field names within the same level of a single document.</p>",
+                    "<p>Each field has a value associated with it.</p>",
+                    "<p>Values do not need to be attached to fields and can be standalone data points.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "c"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524640,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select true statement(s)&nbsp;regarding to the MongoDB Atlas. Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>MongoDB Atlas includes many tools and services specifically designed for the MongoDB database.</p>",
+                    "<p>MongoDB Atlas is a MongoDB service that can work with any database.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524642,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Which of the following documents is/are valid JSON? Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>While some software may not throw an error, this is still not valid JSON because each field name should be in quotes:</p><p><br></p><pre class=\"prettyprint linenums\">{_id:&nbsp;1,&nbsp;name:&nbsp;\"Riviera&nbsp;Caterer\",&nbsp;cuisine:&nbsp;\"American\"}</pre><p><br></p><p>Square brackets instead of curly ones:</p><p><br></p><pre class=\"prettyprint linenums\">[\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Riviera&nbsp;Caterer\",&nbsp;\"cuisine\":&nbsp;\"American\"]</pre><p><br></p><p>The rest of the examples are self-evident.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Riviera&nbsp;Caterer\",&nbsp;\"cuisine\":&nbsp;\"American\"}</pre>",
+                    "<pre class=\"prettyprint linenums\">[\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Riviera&nbsp;Caterer\",&nbsp;\"cuisine\":&nbsp;\"American\"]</pre>",
+                    "<pre class=\"prettyprint linenums\">&lt;\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Riviera&nbsp;Caterer\",&nbsp;\"cuisine\":&nbsp;\"American\"&gt;</pre>",
+                    "<pre class=\"prettyprint linenums\">{_id:&nbsp;1,&nbsp;name:&nbsp;\"Riviera&nbsp;Caterer\",&nbsp;cuisine:&nbsp;\"American\"}</pre>",
+                    "<pre class=\"prettyprint linenums\">{\"_id\":&nbsp;1,&nbsp;\"address\":&nbsp;{\"street\":&nbsp;\"Stillwell&nbsp;Avenue\",&nbsp;\"zipcode\":&nbsp;\"11224\"}}</pre>",
+                    "<pre class=\"prettyprint linenums\">{\"_id\":&nbsp;1,&nbsp;\"grades\":&nbsp;[{\"grade\":&nbsp;\"A\",&nbsp;\"score\":&nbsp;5},&nbsp;{\"grade\":&nbsp;\"B\",&nbsp;\"score\":&nbsp;8}]}</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "e",
+                "f"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524644,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select true statement(s)&nbsp;regarding to the MongoDB (BSON, JSON). Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>MongoDB stores data in BSON, and we can view it in JSON.</p>",
+                    "<p>MongoDB stores data in JSON, and we can view it in BSON.</p>",
+                    "<p>BSON is faster to parse and lighter to store than JSON.</p>",
+                    "<p>BSON supports more data types than JSON.</p>",
+                    "<p>BSON supports as many data types as JSON.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "c",
+                "d"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524646,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Which of the following commands will add a collection that is stored in JSON file to a MongoDB cluster?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">mongoimport</pre>",
+                    "<pre class=\"prettyprint linenums\">mongoexport</pre>",
+                    "<pre class=\"prettyprint linenums\">mongodump</pre>",
+                    "<pre class=\"prettyprint linenums\">mongostore</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524648,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Which of the following commands will add a collection that is stored in BSON file to a MongoDB cluster?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">mongostore</pre>",
+                    "<pre class=\"prettyprint linenums\">mongodump</pre>",
+                    "<pre class=\"prettyprint linenums\">mongoimport</pre>",
+                    "<pre class=\"prettyprint linenums\">mongoexport</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524650,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Which of the following commands can you use to exports data in BSON form from a MongoDB cluster?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">mongodump</pre>",
+                    "<pre class=\"prettyprint linenums\">mongoexport</pre>",
+                    "<pre class=\"prettyprint linenums\">mongostore</pre>",
+                    "<pre class=\"prettyprint linenums\">mongoimport</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524652,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>What does <code>it</code> command do in the mongo shell?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>Iterates through the cursor results.</p>",
+                    "<p>Displays cluster statistics.</p>",
+                    "<p><code>it</code> is not a mongo shell command.</p>",
+                    "<p>Terminates the current query execution.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524654,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Which of the following statements are true about the mongo shell? Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>The mongo shell does not return documents in sorted order by default.</p>",
+                    "<p>You can get a sorted set of documents by using the <code>sort()</code> command.</p>",
+                    "<p>Mongo shell allows us to interact with MongoDB instance without using GUI.</p>",
+                    "<p>Mongo shell is a fully functioning JavaScript interpreter (which means that we can create things like JavaScript variables and functions in mongo shell).</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524656,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select true statement(s)&nbsp;regarding to the <code>_id</code> field in MongoDB documents. Check all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>When inserting a document, the <code>_id</code> value is already generated as an ObjectId type, if not directly specified.</p>",
+                    "<p>We can select a non ObjectId type value when inserting a new document.</p>",
+                    "<p>The <code>_id</code> values must be unique for the collection.</p>",
+                    "<p>The <code>_id</code> can be an array data type.</p>",
+                    "<p>MongoDB adds an <code>_id</code> field to any inserted document if it doesn't have one.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c",
+                "e"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524658,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select all true statements regarding to duplicate documents in MongoDB.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>MongoDB can store duplicate documents in the same collection (with the same <code>_id</code> value).</p>",
+                    "<p>MongoDB can store duplicate documents in the same collection, as long as their <code>_id</code> values are different.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524660,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select all true statements regarding to the insert operation.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>MongoDB will automatically add an <code>_id</code> field when inserting document without specified <code>_id</code> field into a collection.</p>",
+                    "<p>If you insert a document with no <code>_id</code> value specified, it will result in a write error.</p>",
+                    "<p>If you insert document with a <code>_id</code> field value that already exists, an error will be raised.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "c"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524662,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Which of the following commands will successfully insert exactly <strong>two </strong>new documents into an empty <code>companies</code> collection?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Twitter\"}\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Twitter\"}\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Twitter\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Tesla\"}\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Twitter\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Tesla\"\n}])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Twitter\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Tesla\"}\n],&nbsp;{\"ordered\":&nbsp;false})</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c",
+                "e"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524664,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Suppose you insert the following documents into <code>companies</code> collection:</p><p><br></p><pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Twitter\"}\n])</pre><p><br></p><p>Select all true statements about this operation.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>The <code>_id</code> field is not specified in any of these documents.</p>",
+                    "<p>MongoDB will automatically create an <code>_id</code> field for each document and it will be unique.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524666,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Suppose you insert the following documents into <code>companies</code> collection:</p><p><br></p><pre class=\"prettyprint linenums\">db.companies.insertMany([\n    {\"_id\": 1, \"name\": \"Facebook\"}, \n    {\"_id\": 1, \"name\": \"Twitter\"}, \n    {\"_id\": 2, \"name\": \"Tesla\"},\n    {\"_id\": 3, \"name\": \"Amazon\"}\n], {\"ordered\": false})</pre><p><br></p><p>Select all true statements about this operation.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>This insert is unordered.</p>",
+                    "<p>MongoDB will insert each document with a unique <code>_id</code> value into the collection.</p>",
+                    "<p>Three documents will be inserted into the collection.</p>",
+                    "<p>Two documents will be inserted into the collection.</p>",
+                    "<p>One document will be inserted into the collection.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524668,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>MongoDB has a flexible data model. Select any <strong>invalid </strong>MongoDB documents from the given choices:</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;airTemperature:&nbsp;{&nbsp;value:&nbsp;999.9,&nbsp;quality:&nbsp;'9'&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;pressure:&nbsp;{&nbsp;value:&nbsp;9999.9,&nbsp;quality:&nbsp;'9'&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;sections:&nbsp;[&nbsp;'AG1',&nbsp;'AY1',&nbsp;'GF1',&nbsp;'MW1'&nbsp;]\n}</pre>",
+                    "<pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;airTemperature:&nbsp;{&nbsp;value:&nbsp;7.1,&nbsp;quality:&nbsp;'1'&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;pressure:&nbsp;{&nbsp;value:&nbsp;1028.2,&nbsp;quality:&nbsp;'1'&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;sections:&nbsp;['AG1',&nbsp;'AY1',&nbsp;'GF1',&nbsp;'MD1','MW1',&nbsp;'OA1']\n}</pre>",
+                    "<pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;airTemperature:&nbsp;[&nbsp;value:&nbsp;7.1,&nbsp;quality:&nbsp;'1'&nbsp;],\n&nbsp;&nbsp;&nbsp;&nbsp;pressure:&nbsp;{&nbsp;value:&nbsp;1028.2,&nbsp;quality:&nbsp;'1'&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;pressure:&nbsp;['AG1',&nbsp;'AY1',&nbsp;'GF1',&nbsp;'MD1','MW1',&nbsp;'OA1']\n}</pre>",
+                    "<pre class=\"prettyprint linenums\">{ _id: ObjectId(\"61a8b90c6d5ce6a7d8fef95e\") }</pre>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524670,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Given a <code>companies</code> collection where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    name: 'Facebook',\n    tag_list: ['facebook', 'college', 'students', 'network'],\n    description: 'Social network'\n}</pre><p><br></p><p>Which of the following commands will add new fields to the updated documents?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.companies.updateMany({ \"name\":&nbsp;\"Facebook\" },\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     { \"$set\":&nbsp;{ \"country\":&nbsp;\"USA\" } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.comp.updateMany({&nbsp;\"name\":&nbsp;\"Facebook\"&nbsp;},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"$set\":&nbsp;{&nbsp;\"description\":&nbsp;\"Social&nbsp;media\"&nbsp;}&nbsp;})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.comp.updateMany({&nbsp;\"name\":&nbsp;\"Facebook\"&nbsp;},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"$push\":&nbsp;{&nbsp;\"tag_list\":&nbsp;\"media\"&nbsp;}&nbsp;})</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524672,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Which of the following commands will delete a collection named <code>restaurants</code>?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.restaurants.drop()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.restaurants.dropCollection()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.restaurants.delete()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.restaurants.remove()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524674,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>What are some of the uses for the <code>$</code> sign in MQL?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p><code>$</code> denotes an operator - all MQL operators have the<code> $</code> prefix.</p>",
+                    "<p>When <code>$</code> is used to prefix a field name, it represents the value stored in that field.</p>",
+                    "<p>The <code>$</code> sign has no special meaning in MQL.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524676,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Given a <em>movies </em>collection where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1390f29313caabcd60e4\"),\n    genres: [ 'Short', 'Comedy', 'Drama' ],\n    title: 'The Immigrant',\n    year: 1917,\n    imdb: { rating: 7.8, votes: 4680, id: 8133 },\n    countries: [ 'USA' ]\n}</pre><p><br></p><p>Which of the following queries will find all the movies that have more votes than the year in which they were released?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find({&nbsp;$expr:&nbsp;{&nbsp;$gt:&nbsp;[\"$imdb.votes\",&nbsp;\"$year\"]&nbsp;}&nbsp;})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find({&nbsp;$expr:&nbsp;{&nbsp;$lt:&nbsp;[\"$imdb.votes\",&nbsp;\"$year\"]&nbsp;}&nbsp;})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find({&nbsp;$expr:&nbsp;{&nbsp;$gt:&nbsp;[\"imdb.votes\",&nbsp;\"year\"]&nbsp;}&nbsp;})</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T13:18:30Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524678,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>Select all true statements about differences between using <code>aggregate()</code> and <code>find()</code>.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p><code>find()</code> allows us to compute and reshape data in the cursor.</p>",
+                    "<p>Any <code>find()</code> query can be translated into an aggregation pipeline.</p>",
+                    "<p>Any aggregation pipeline can be translated into a <code>find()</code> query.</p>",
+                    "<p><code>aggregate()</code> allows us to compute and reshape data in the cursor (like <code>$group</code>, <code>$min</code> and other stages).</p>"
+                ]
+            },
+            "correct_response": [
+                "b",
+                "d"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524680,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>What is data modeling in MongoDB world?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>A way to organize fields in a document to support your application performance and querying capabilities.</p>",
+                    "<p>A way to build your application based on how your data is stored.</p>",
+                    "<p>A way to decide whether to store your data in the cloud or locally.</p>",
+                    "<p>A way to show your database with graphs.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524682,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>What is MongoDB Charts?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>MongoDB product that helps you visualize data stored in an Atlas cluster.</p>",
+                    "<p>A feature that displays data about the performance of your Atlas cluster.</p>",
+                    "<p>An application that allows you to embed on your website visualizations that are created in other applications.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524684,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:42Z",
+            "prompt": {
+                "question": "<p>What is MongoDB Compass?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<p>It is a GUI for MongoDB.</p>",
+                    "<p>Special data type in MongoDB to store geospatial data.</p>",
+                    "<p>A map-based chart type that is available with MongoDB Charts.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:42Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524686,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T11:58:43Z",
+            "prompt": {
+                "question": "<p>You have the <em>companies </em>collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"52cdef7c4bab8bd675297dac\"),\n&nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;'Veoh',\n&nbsp;&nbsp;&nbsp;&nbsp;homepage_url:&nbsp;'http://www.veoh.com',\n&nbsp;&nbsp;&nbsp;&nbsp;category_code:&nbsp;'games_video',\n&nbsp;&nbsp;&nbsp;&nbsp;number_of_employees:&nbsp;null,\n&nbsp;&nbsp;&nbsp;&nbsp;founded_year:&nbsp;2004,\n&nbsp;&nbsp;&nbsp;&nbsp;tag_list:&nbsp;'veoh,&nbsp;video,&nbsp;veohtv,&nbsp;socialvideo,&nbsp;videosharing,&nbsp;crunchbase,&nbsp;inuyasha',\n&nbsp;&nbsp;&nbsp;&nbsp;email_address:&nbsp;'pr@veoh.com',\n&nbsp;&nbsp;&nbsp;&nbsp;description:&nbsp;'Internet&nbsp;TV&nbsp;service'\n}</pre><p><br></p><p>How can you use projection to extract all documents with the following fields: <em>name, homepage_url, tag_list</em>?</p><p><br></p><p>For example:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;'Veoh',\n&nbsp;&nbsp;&nbsp;&nbsp;homepage_url:&nbsp;'http://www.veoh.com',\n&nbsp;&nbsp;&nbsp;&nbsp;tag_list:&nbsp;'veoh,&nbsp;video,&nbsp;veohtv,&nbsp;socialvideo,&nbsp;videosharing,&nbsp;crunchbase,&nbsp;inuyasha'\n}</pre>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.companies.find( {}, { _id: 0, name: 1, homepage_url: 1, tag_list: 1 })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( {}, { name: 1, homepage_url: 1, tag_list: 1 })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( {}, { _id: 1, name: 1, homepage_url: 1, tag_list: 1 })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { _id: 0, name: 1, homepage_url: 1, tag_list: 1 })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T11:58:43Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40524724,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T12:07:10Z",
+            "prompt": {
+                "question": "<p>There is a collection named <em>products</em> in MongoDB database. Your coworker asked you how many products there are in this collection (number of documents in the collection). Which query should you use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.products.countDocuments()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.find().count()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.total()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "updated": "2021-12-05T12:07:46Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40525010,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T12:12:31Z",
+            "prompt": {
+                "question": "<p>There is a collection named <em>products</em> in MongoDB database. Your coworker asked you how many products there are in this collection (number of documents in the collection) from the United States (<code>country</code> field, <code>\"USA\"</code> value). Which query should you use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.products.find( { country: \"USA\" }).count()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.find(country = \"USA\").count()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.find(country == \"USA\").count()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.find( { country: \"USA\" })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T12:12:31Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40530028,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T13:17:52Z",
+            "prompt": {
+                "question": "<p>Given a <em>movies </em>collection where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1390f29313caabcd60e4\"),\n    genres: [ 'Short', 'Comedy', 'Drama' ],\n    title: 'The Immigrant',\n    year: 1917,\n    imdb: { rating: 7.8, votes: 4680, id: 8133 },\n    countries: [ 'USA' ]\n}</pre><p><br></p><p>Which of the following queries will find all movies that were made in 2000 or 2010?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { $or: [{ year: 2000 }, { year: 2010 }] } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { $and: [{ year: 2000 }, { year: 2010 }] } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { $in: [{ year: 2000 }, { year: 2010 }] } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { year: 2000, year: 2010} )</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T13:17:52Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40530534,
+            "assessment_type": "multi-select",
+            "created": "2021-12-05T13:22:02Z",
+            "prompt": {
+                "question": "<p>Given a <em>movies </em>collection where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1390f29313caabcd60e4\"),\n    genres: [ 'Short', 'Comedy', 'Drama' ],\n    title: 'The Immigrant',\n    year: 1917,\n    imdb: { rating: 7.8, votes: 4680, id: 8133 },\n    countries: [ 'USA' ]\n}</pre><p><br></p><p>Which of the following queries will find all Comedy movies that were made in 2000?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { year: 2000, genres: \"Comedy\" })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { $and: [{ year: 2000 }, { genres: \"Comedy\" }] })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { $or: [{ year: 2000 }, { genres: \"Comedy\" }] })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { year: 2000}, {genres: \"Comedy\" })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "updated": "2021-12-05T13:22:02Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40530586,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T13:30:19Z",
+            "prompt": {
+                "question": "<p>Given a <em>movies </em>collection where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1390f29313caabcd60e4\"),\n    genres: [ 'Short', 'Comedy', 'Drama' ],\n    title: 'The Immigrant',\n    year: 1917,\n    imdb: { rating: 7.8, votes: 4680, id: 8133 },\n    countries: [ 'USA' ]\n}</pre><p><br></p><p>Which of the following queries will find all movies that do not contain the Comedy and Romance genres?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: {$nin: [\"Comedy\", \"Romance\"]}})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: {$in: [\"Comedy\", \"Romance\"]}})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: {$or: [\"Comedy\", \"Romance\"]}})</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T14:10:50Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40532178,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T14:20:24Z",
+            "prompt": {
+                "question": "<p>Given a <em>companies </em>collection where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"52cdef7c4bab8bd675297efd\"),\n    name: 'ZoomInfo',\n    homepage_url: 'http://www.zoominfo.com',\n    blog_url: 'http://zoominfoblogger.wordpress.com/',\n    twitter_username: 'ZoomInfo',\n    founded_year: 2000,\n    email_address: ''\n}</pre><p><br></p><p>Extract all companies from this collection that have the same Twitter account as the company name. Which query should you use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<pre class=\"prettyprint linenums\">db.companies.find( { $expr: { $eq: ['$name', 'twitter_username'] } })</pre><p>You have to use <code>$</code> sign to evaluate <em>twitter_username </em>field.</p><p><br></p><pre class=\"prettyprint linenums\">db.companies.find( { $expr: { $eq: ['name', 'twitter_username'] } })</pre><p>You have to use <code>$</code> sign to evaluate <em>name </em>and <em>twitter_username </em>fields.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { $expr: { $eq: ['$name', '$twitter_username'] } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { $expr: { $ne: ['$name', '$twitter_username'] } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { $expr: { $eq: ['$name', 'twitter_username'] } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { $expr: { $eq: ['name', 'twitter_username'] } })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T14:20:28Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40532202,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-05T14:26:04Z",
+            "prompt": {
+                "question": "<p>Given a <em>movies </em>collection where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1391f29313caabcd9264\"),\n    genres: [ 'Romance', 'Drama' ],\n    title: 'The Divorcee',\n    languages: [ 'English', 'French' ],\n    year: 1930,\n    imdb: { rating: 6.9, votes: 1740, id: 20827 },\n    countries: [ 'USA' ]\n}</pre><p><br></p><p>Which of the following queries will find all movies that have exactly 5 languages?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { languages: { $size: 5 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { languages: { $gt: 5 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { languages: { $eq: 5 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { languages: 5 } )</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-05T14:26:04Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40553200,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T09:32:05Z",
+            "prompt": {
+                "question": "<p>In your database a <em>movies </em>collection is given where each document has the following structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1391f29313caabcd9264\"),\n    genres: [ 'Romance', 'Drama' ],\n    title: 'The Divorcee',\n    languages: [ 'English', 'French' ],\n    year: 1930,\n    imdb: { rating: 6.9, votes: 1740, id: 20827 },\n    countries: [ 'USA' ]\n}</pre><p><br></p><p>Which of the following queries will return all movies that are in the Fantasy and Drama (both) genre?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {genres: {$all: ['Fantasy', 'Drama']}})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {genres: {$in: ['Fantasy', 'Drama']}})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {genres: {$size: ['Fantasy', 'Drama']}})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {genres: {$elemMatch: ['Fantasy', 'Drama']}})</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T09:32:05Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40553432,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T09:54:18Z",
+            "prompt": {
+                "question": "<p>In your database there is a collection named <em>companies </em>with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n  name: 'Wize',\n  relationships: [\n    {\n      is_past: false,\n      title: 'Head of Product',\n      person: {\n        first_name: 'Ethan',\n        last_name: 'Smith',\n        permalink: 'ethan-smith'\n      }\n    },\n    {\n      is_past: true,\n      title: 'Director, Business Development',\n      person: {\n        first_name: 'Stephanie',\n        last_name: 'Quay',\n        permalink: 'stephanie-quay'\n      }\n    },\n    {\n      is_past: true,\n      title: 'Sr. Engineer',\n      person: {\n        first_name: 'Stefan',\n        last_name: 'Antonowicz',\n        permalink: 'stefan-antonowicz'\n      }\n    }\n  ]\n}</pre><p><br></p><p>Which of the following query should you use to extract all companies that have <code>\"Co-Founder\"</code>&nbsp;title in relationships field (Array)?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { relationships: { $elemMatch: { title: 'Co-Founder' } } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { relationships: { $match: { title: 'Co-Founder' } } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.find( { relationships: { $eq: { title: 'Co-Founder' } } })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T09:54:18Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40555070,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T11:20:04Z",
+            "prompt": {
+                "question": "<p>Which cursor method should you use to specify the maximum number of documents returned?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">cursor.limit()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.count()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.hint()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.map()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.skip()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T11:20:04Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40555492,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T11:22:56Z",
+            "prompt": {
+                "question": "<p>Which cursor method should you use to return the number of documents in the result set?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">cursor.count()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.sum()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.total()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.explain()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T11:22:56Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40556306,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T11:24:58Z",
+            "prompt": {
+                "question": "<p>Which cursor method should you use to get information about the query plan?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">cursor.explain()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.hint()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.map()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T11:24:58Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40556486,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T11:27:17Z",
+            "prompt": {
+                "question": "<p>Which cursor method should you use to force MongoDB to use a specific index for a query?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">cursor.hint()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.index()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.use()</pre>",
+                    "<pre class=\"prettyprint linenums\">cursor.explain()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T11:27:17Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40559388,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T11:47:50Z",
+            "prompt": {
+                "question": "<p>In your database there is a collection named <em>trips </em>with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;'_id':&nbsp;ObjectId(\"572bb8222b288919b68abf6d\"),\n&nbsp;&nbsp;'trip_duration':&nbsp;858,\n&nbsp;&nbsp;'start_station&nbsp;id':&nbsp;532,\n&nbsp;&nbsp;'end_station_id':&nbsp;401,\n&nbsp;&nbsp;'bike_id':&nbsp;17057,\n&nbsp;&nbsp;'start_station_location':&nbsp;{&nbsp;type:&nbsp;'Point',&nbsp;coordinates:&nbsp;[&nbsp;-73.960876,&nbsp;40.710451&nbsp;]&nbsp;},\n&nbsp;&nbsp;'end_station_location':&nbsp;{&nbsp;type:&nbsp;'Point',&nbsp;coordinates:&nbsp;[&nbsp;-73.98997825,&nbsp;40.72019576&nbsp;]&nbsp;},\n&nbsp;&nbsp;'start_time':&nbsp;ISODate(\"2016-01-01T00:09:31.000Z\"),\n&nbsp;&nbsp;'stop_time':&nbsp;ISODate(\"2016-01-01T00:23:49.000Z\")\n}</pre><p><br></p><p>How can you extract all trips from this collection ended at stations that are to the west of the -73.5 longitude coordinate?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.trips.find( { 'end_station_location.coordinates.0': { $lt: -73.5 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.trips.find( { 'end_station_location.coordinates.1': { $lt: -73.5 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.trips.find( { 'coordinates': { $lt: -73.5 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.trips.find( { 'end_station_location.coordinates.0': { $gt: -73.5 } })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T11:47:50Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40560768,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T12:11:33Z",
+            "prompt": {
+                "question": "<p>In your database there is a collection named <em>sales </em>with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n  _id: ObjectId(\"5bd761dcae323e45a93ccfe8\"),\n  saleDate: ISODate(\"2015-03-23T21:06:49.506Z\"),\n  items: [\n    {\n      name: 'printer paper',\n      tags: [ 'office', 'stationary' ],\n      price: Decimal128(\"40.01\"),\n      quantity: 2\n    },\n    {\n      name: 'notepad',\n      tags: [ 'office', 'writing', 'school' ],\n      price: Decimal128(\"35.29\"),\n      quantity: 2\n    },\n    {\n      name: 'pens',\n      tags: [ 'writing', 'school', 'stationary' ],\n      price: Decimal128(\"56.12\"),\n      quantity: 5\n    }\n  ],\n  storeLocation: 'Denver',\n  customer: { gender: 'M', age: 42, email: 'cauho@witwuta.sv', satisfaction: 4 },\n  purchaseMethod: 'Online'\n}</pre><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;_id:&nbsp;ObjectId(\"5bd761dcae323e45a93ccfe9\"),\n&nbsp;&nbsp;saleDate:&nbsp;ISODate(\"2015-08-25T10:01:02.918Z\"),\n&nbsp;&nbsp;items:&nbsp;[\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;'binder',\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tags:&nbsp;[&nbsp;'school',&nbsp;'general',&nbsp;'organization'&nbsp;],\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price:&nbsp;Decimal128(\"28.31\"),\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity:&nbsp;9\n&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name:&nbsp;'backpack',\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tags:&nbsp;[&nbsp;'school',&nbsp;'travel',&nbsp;'kids'&nbsp;],\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;price:&nbsp;Decimal128(\"83.28\"),\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;quantity:&nbsp;2\n&nbsp;&nbsp;&nbsp;&nbsp;}\n&nbsp;&nbsp;],\n&nbsp;&nbsp;storeLocation:&nbsp;'Seattle',\n&nbsp;&nbsp;customer:&nbsp;{&nbsp;gender:&nbsp;'M',&nbsp;age:&nbsp;50,&nbsp;email:&nbsp;'keecade@hem.uy',&nbsp;satisfaction:&nbsp;5&nbsp;},\n&nbsp;&nbsp;couponUsed:&nbsp;false,\n&nbsp;&nbsp;purchaseMethod:&nbsp;'Phone'\n}</pre><p><br></p><p>How can you extract all documents from this collection where the first tag in the <em>tags </em>field (Array) is <code>'office'</code> in at least one item?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.sales.find( { 'items.tags.0': 'office' })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.find( { 'items.tags$0': 'office' })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.find( { 'items.tags.[0]': 'office' })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T12:11:33Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40562148,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T12:52:09Z",
+            "prompt": {
+                "question": "<p>In your database there is a <em>movies </em>collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;_id:&nbsp;ObjectId(\"573a1390f29313caabcd42e8\"),\n&nbsp;&nbsp;genres:&nbsp;[&nbsp;'Short',&nbsp;'Western'&nbsp;],\n&nbsp;&nbsp;title:&nbsp;'The&nbsp;Great&nbsp;Train&nbsp;Robbery',\n&nbsp;&nbsp;rated:&nbsp;'TV-G',\n&nbsp;&nbsp;year:&nbsp;1903,\n&nbsp;&nbsp;imdb:&nbsp;{&nbsp;rating:&nbsp;7.4,&nbsp;votes:&nbsp;9847,&nbsp;id:&nbsp;439&nbsp;},\n&nbsp;&nbsp;countries:&nbsp;[&nbsp;'USA'&nbsp;]\n},\n{\n&nbsp;&nbsp;_id:&nbsp;ObjectId(\"573a1390f29313caabcd4323\"),\n&nbsp;&nbsp;genres:&nbsp;[&nbsp;'Short',&nbsp;'Drama',&nbsp;'Fantasy'&nbsp;],\n&nbsp;&nbsp;rated:&nbsp;'UNRATED',\n&nbsp;&nbsp;title:&nbsp;'The&nbsp;Land&nbsp;Beyond&nbsp;the&nbsp;Sunset',\n&nbsp;&nbsp;year:&nbsp;1912,\n&nbsp;&nbsp;imdb:&nbsp;{&nbsp;rating:&nbsp;7.1,&nbsp;votes:&nbsp;448,&nbsp;id:&nbsp;488&nbsp;},\n&nbsp;&nbsp;countries:&nbsp;[&nbsp;'USA'&nbsp;]\n}</pre><p><br></p><p>Which of the following queries will return only the title for the five oldest movies in this collection?</p><p><br></p><p><strong>Expected result:</strong></p><p><br></p><pre class=\"prettyprint linenums\">[\n  { title: 'Newark Athlete' },\n  { title: 'Blacksmith Scene' },\n  { title: 'Dickson Experimental Sound Film' },\n  { title: 'The Kiss' },\n  { title: 'The Great Train Robbery' }\n]</pre>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {}, { title: 1, _id: 0 }).sort({ year: 1 }).limit(5)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {}, { title: 1, _id: 0 }).sort({ year: 1 }).skip(5).limit(5)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {}, { title: 1 }).sort({ year: 1 }).limit(5)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {}, { title: 1, _id: 0 }).sort({ year: 1 }).skip(5)</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T12:52:51Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40562172,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T12:55:46Z",
+            "prompt": {
+                "question": "<p>In your database there is a <em>movies </em>collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;_id:&nbsp;ObjectId(\"573a1390f29313caabcd42e8\"),\n&nbsp;&nbsp;genres:&nbsp;[&nbsp;'Short',&nbsp;'Western'&nbsp;],\n&nbsp;&nbsp;title:&nbsp;'The&nbsp;Great&nbsp;Train&nbsp;Robbery',\n&nbsp;&nbsp;rated:&nbsp;'TV-G',\n&nbsp;&nbsp;year:&nbsp;1903,\n&nbsp;&nbsp;imdb:&nbsp;{&nbsp;rating:&nbsp;7.4,&nbsp;votes:&nbsp;9847,&nbsp;id:&nbsp;439&nbsp;},\n&nbsp;&nbsp;countries:&nbsp;[&nbsp;'USA'&nbsp;]\n},\n{\n&nbsp;&nbsp;_id:&nbsp;ObjectId(\"573a1390f29313caabcd4323\"),\n&nbsp;&nbsp;genres:&nbsp;[&nbsp;'Short',&nbsp;'Drama',&nbsp;'Fantasy'&nbsp;],\n&nbsp;&nbsp;rated:&nbsp;'UNRATED',\n&nbsp;&nbsp;title:&nbsp;'The&nbsp;Land&nbsp;Beyond&nbsp;the&nbsp;Sunset',\n&nbsp;&nbsp;year:&nbsp;1912,\n&nbsp;&nbsp;imdb:&nbsp;{&nbsp;rating:&nbsp;7.1,&nbsp;votes:&nbsp;448,&nbsp;id:&nbsp;488&nbsp;},\n&nbsp;&nbsp;countries:&nbsp;[&nbsp;'USA'&nbsp;]\n}</pre><p><br></p><p>In some documents, where there is no rating information for movie, the value is set to <code>''</code> (empty string). With that in mind, which of the following queries will return the title and rating (see below) of top 3 rated movies in this collection?</p><p><br></p><p><strong>Expected result:</strong></p><p><br></p><pre class=\"prettyprint linenums\">[\n  { title: 'Band of Brothers', imdb: { rating: 9.6 } },\n  { title: 'Planet Earth', imdb: { rating: 9.5 } },\n  { title: 'The Civil War', imdb: { rating: 9.4 } }\n]</pre>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {'imdb.rating': {$ne: ''}}, { 'imdb.rating': 1, title: 1 }).sort({ 'imdb.rating': -1 }).limit(3)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {'imdb.rating': {$ne: ''}}, { 'imdb.rating': 1, title: 1 }).sort({ 'imdb.rating': 1 }).limit(3)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {}, { 'imdb.rating': 1, title: 1 }).sort({ 'imdb.rating': 1 }).limit(3)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( {'imdb.rating': {$eq: ''}}, { 'imdb.rating': 1, title: 1 }).sort({ 'imdb.rating': -1 }).limit(3)</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T13:01:15Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40566076,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T15:17:23Z",
+            "prompt": {
+                "question": "<p>Which collection method do you need to use to drop a specific collection?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.collection.drop()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.dropIndex()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.dropCollection()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.remove()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T15:17:23Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40566100,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T15:21:17Z",
+            "prompt": {
+                "question": "<p>Suppose you want to familiarize with a new collection and want to display a single document. Which collection method should you use in this case?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.collection.findOne()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.getOne()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.find()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.explain()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T15:21:17Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40566708,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T15:50:53Z",
+            "prompt": {
+                "question": "<p>There is a <em>gamers</em> collection in your database with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{&nbsp;_id:&nbsp;1,&nbsp;level:&nbsp;15,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;2,&nbsp;level:&nbsp;14,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;3,&nbsp;level:&nbsp;7,&nbsp;is_active:&nbsp;false&nbsp;}</pre><p><br></p><p>How do you update the value of the <em>level </em>field to 20 for a player with an id = 2?</p><p><br></p><p>Expected result:</p><p><br></p><pre class=\"prettyprint linenums\">{&nbsp;_id:&nbsp;1,&nbsp;level:&nbsp;15,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;2,&nbsp;level:&nbsp;20,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;3,&nbsp;level:&nbsp;7,&nbsp;is_active:&nbsp;false&nbsp;}</pre>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.gamers.update( { _id: 2 }, { $set: { level: 20 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.gamers.update( { _id: 2 }, { level: 20 } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.gamers.update( { _id: 2 }, { $inc: { level: 20 } })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T15:54:22Z",
+            "section": ""
+        },
+        {
+            "_class": "assessment",
+            "id": 40566728,
+            "assessment_type": "multiple-choice",
+            "created": "2021-12-06T15:54:00Z",
+            "prompt": {
+                "question": "<p>There is a <em>gamers</em> collection in your database with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{&nbsp;_id:&nbsp;1,&nbsp;level:&nbsp;15,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;2,&nbsp;level:&nbsp;14,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;3,&nbsp;level:&nbsp;7,&nbsp;is_active:&nbsp;false&nbsp;}</pre><p><br></p><p>How do you increase the value of the <em>level </em>field by 20 for a player with id = 3?</p><p><br></p><p>Expected result:</p><p><br></p><pre class=\"prettyprint linenums\">{&nbsp;_id:&nbsp;1,&nbsp;level:&nbsp;15,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;2,&nbsp;level:&nbsp;14,&nbsp;is_active:&nbsp;true&nbsp;},\n{&nbsp;_id:&nbsp;3,&nbsp;level:&nbsp;27,&nbsp;is_active:&nbsp;false&nbsp;}</pre>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.gamers.update( { _id: 3 }, { $inc: { level: 20 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.gamers.update( { _id: 3 }, { $set: { level: 20 } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.gamers.update( { _id: 3 }, { $unset: { level: 20 } })</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "updated": "2021-12-06T15:54:00Z",
+            "section": ""
+        }
+    ]
+}
