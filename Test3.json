@@ -1,1 +1,1718 @@
-{"count":30,"next":null,"previous":null,"results":[{"_class":"assessment","id":44973824,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>The following capped collection is given: </p><p><br></p><pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'capped':&nbsp;true,&nbsp;'size':&nbsp;10000,&nbsp;'max':&nbsp;3})</pre><p><br></p><pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e8007c9b3067e362440a88\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'COVID&nbsp;records&nbsp;broken&nbsp;again&nbsp;as&nbsp;weekend&nbsp;brings&nbsp;nearly&nbsp;40K&nbsp;new&nbsp;cases'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;}\n]</pre><p><br></p><p>What the <em>latest_news </em>collection will look like after the following operation?</p><p><br></p><pre class=\"prettyprint linenums\">db.latest_news.insertOne({title:&nbsp;'TikTok&nbsp;owner&nbsp;ByteDance&nbsp;dissolves&nbsp;its&nbsp;investment&nbsp;arm'})</pre>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/capped-collections/</p>","answers":["<pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e801439b3067e362440a8b\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'TikTok&nbsp;owner&nbsp;ByteDance&nbsp;dissolves&nbsp;its&nbsp;investment&nbsp;arm'\n&nbsp;&nbsp;}\n]</pre>","<pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e8007c9b3067e362440a88\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'COVID&nbsp;records&nbsp;broken&nbsp;again&nbsp;as&nbsp;weekend&nbsp;brings&nbsp;nearly&nbsp;40K&nbsp;new&nbsp;cases'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;}\n]</pre>","<pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e8007c9b3067e362440a88\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'COVID&nbsp;records&nbsp;broken&nbsp;again&nbsp;as&nbsp;weekend&nbsp;brings&nbsp;nearly&nbsp;40K&nbsp;new&nbsp;cases'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e801439b3067e362440a8b\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'TikTok&nbsp;owner&nbsp;ByteDance&nbsp;dissolves&nbsp;its&nbsp;investment&nbsp;arm'\n&nbsp;&nbsp;}\n]</pre>"]},"correct_response":["a"],"updated":"2022-03-16T08:55:55Z","section":""},{"_class":"assessment","id":44973826,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Data modeling. You are considering the use of nesting or references in your data model. Your data may change frequently. Which option would be more appropriate?</p>","relatedLectureIds":"","feedbacks":["",""],"explanation":"<p>https://docs.mongodb.com/manual/core/data-modeling-introduction/</p>","answers":["<p>Use of reference.</p>","<p>Use of nesting.</p>"]},"correct_response":["a"],"updated":"2022-03-16T08:56:34Z","section":""},{"_class":"assessment","id":44973828,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Data modeling. You are considering the use of nesting or references in your data model. Documents can grow rapidly. Which option would be more appropriate?</p>","relatedLectureIds":"","feedbacks":["",""],"explanation":"<p>https://docs.mongodb.com/manual/core/data-modeling-introduction/</p>","answers":["<p>Use of reference.</p>","<p>Use of nesting.</p>"]},"correct_response":["a"],"updated":"2022-03-16T08:56:40Z","section":""},{"_class":"assessment","id":44973830,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Data modeling. You are considering the use of nesting or the references in your data model. Data read operations must be fast. Which option would be more appropriate?</p>","relatedLectureIds":"","feedbacks":["",""],"explanation":"<p>https://docs.mongodb.com/manual/core/data-modeling-introduction/</p>","answers":["<p>Use of reference.</p>","<p>Use of nesting.</p>"]},"correct_response":["b"],"updated":"2022-03-16T08:57:05Z","section":""},{"_class":"assessment","id":44973772,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select all true statements about MongoDB documents.</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/document/</p>","answers":["<p>MongoDB documents have a flexible schema.</p>","<p>MongoDB documents are stored as BSON documents.</p>","<p>MongoDB documents are stored as JSON documents.</p>","<p>MongoDB documents must have the same fields in the collection.</p>"]},"correct_response":["a","b"],"updated":"2022-03-16T08:57:21Z","section":""},{"_class":"assessment","id":44973774,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Which of the following constraints might impact your data model for MongoDB?</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/data-modeling-introduction/</p>","answers":["<p>RAM</p>","<p>Network</p>","<p>Security &amp; Compliance</p>","<p>Operating System</p>"]},"correct_response":["a","b","c"],"updated":"2022-03-16T08:57:36Z","section":""},{"_class":"assessment","id":44973776,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>How can we represent a one-to-one relationship in MongoDB?</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-one-relationships-between-documents/</p>","answers":["<p>We can embed fields in the document.</p>","<p>We can embed fields as a child document in the document.</p>","<p>We can link to a single document in another collection.</p>"]},"correct_response":["a","b","c"],"updated":"2022-03-16T08:57:59Z","section":""},{"_class":"assessment","id":44973778,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select all true statements about one-to-zillions relationships (a special case of the one-to-many relationship in MongoDB).</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-many-relationships-between-documents/</p>","answers":["<p>Representing this relationships with document embedding is not recommended.</p>","<p>We need to be extremely careful when writing queries that retrieve data on the zillions side.</p>","<p>This relationship is created to emphasize the fact that huge cardinalities can impact design choices.</p>"]},"correct_response":["a","b","c"],"updated":"2022-03-16T08:58:40Z","section":""},{"_class":"assessment","id":44973780,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Which of the following scenarios best suits the use of the Tree Pattern?</p>","relatedLectureIds":"","feedbacks":["",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-tree-pattern</p>","answers":["<p>Product categories in the online store.</p>","<p>You want to store additional information about your products that are less used by your application.</p>"]},"correct_response":["a"],"updated":"2022-03-16T08:58:55Z","section":""},{"_class":"assessment","id":44973782,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select all true statements about data modeling in MongoDB.</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/data-modeling-introduction/</p>","answers":["<p>MongoDB can easily handle both unstructured and structured data sets.</p>","<p>Unlike SQL databases, where the table schema must be specified and declared before inserting the data, MongoDB collections don't, by default, require documents to have the same schema.</p>","<p>The field set and data type for each field can differ across documents within a collection.</p>","<p>In MongoDB we can enforce document validation rules for a collection during update and insert operations.</p>"]},"correct_response":["a","b","c","d"],"updated":"2022-03-16T08:59:13Z","section":""},{"_class":"assessment","id":44973784,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Let's consider a one-to-many relationship observed between an instructor and the courses he is created on an e-learning platform. We assume that a course can only have one instructor, and an instructor can have multiple courses.</p><p><br></p><p>Which of the following are the correct ways to represent this one-to-many relationship with a document model in MongoDB?</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>Embed all the fields for a course as a subdocument in the corresponding instructor document.</p><p>These subdocuments must be put into an array, not stored directly as a subdocument in its parent. This way we can have a variable number of referenced documents and use a multi-key index to search the \"many\" side. This is not the best way to do it.</p><p><br></p><p>https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-many-relationships-between-documents/</p>","answers":["<p>Embed the entities for the courses as an array of sub-documents in the corresponding instructor document.</p>","<p>Have a collection for the instructors and a collection for the courses with each course document having a field to reference the document of its instructor.</p>","<p>Embed all the fields for a course as a subdocument in the corresponding instructor document.</p>"]},"correct_response":["a","b"],"updated":"2022-03-16T08:59:26Z","section":""},{"_class":"assessment","id":44973786,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Consider a many-to-many relationship observed between <em>courses</em> and the <em>students </em>enrolled in these <em>courses</em>.</p><p><br></p><p>Which of the following are true about modeling this many-to-many relationship with the document model in MongoDB?</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://docs.mongodb.com/manual/applications/data-models-relationships/</p>","answers":["<p>Embedding <em>students </em>in <em>courses </em>duplicates student information.</p>","<p>Embedding <em>students </em>in <em>courses </em>still requires a separate collection to store all students (we may have students who are not enrolled in any course).</p>","<p>When using one collection for <em>students </em>and one collection for <em>courses </em>there is a need for an array of references in only one collection.</p>","<p>The many-to-many relationship cannot be represented in MongoDB.</p>"]},"correct_response":["a","b","c"],"updated":"2022-03-16T09:00:13Z","section":""},{"_class":"assessment","id":44973788,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Consider a one-to-one relationship observed between <em>users</em> and the <em>users details</em>. Basic information about application users is separated from detailed information.</p><p><br></p><p>Which of the following are true about modeling this one-to-one relationship with the document model in MongoDB?</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/tutorial/model-embedded-one-to-one-relationships-between-documents/</p>","answers":["<p>We can embed fields with detailed information in the <em>users </em>collection.</p>","<p>We can embed fields with detailed information as a subdocument in the <em>users </em>collection.</p>","<p>We can link to a single document with detailed information in another collection.</p>"]},"correct_response":["a","b","c"],"updated":"2022-03-16T09:00:22Z","section":""},{"_class":"assessment","id":44973790,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Which of the following scenarios is best suited for applying the Attribute Pattern?</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-attribute-pattern</p>","answers":["<p>You need to apply document validation before inserting/modifying.</p>","<p>Some fields share a similar characteristics, and you want to search across those fields.</p>","<p>The documents in the collection are quite large.</p>"]},"correct_response":["b"],"updated":"2022-03-16T09:00:45Z","section":""},{"_class":"assessment","id":44973792,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Suppose you have a <em>mobile_games</em> collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;game:&nbsp;\"Fishing&nbsp;Clash\",\n&nbsp;&nbsp;&nbsp;&nbsp;company:&nbsp;\"Ten&nbsp;Square&nbsp;Games\",\n&nbsp;&nbsp;&nbsp;&nbsp;platforms:&nbsp;['Android',&nbsp;'IOS'],\n&nbsp;&nbsp;&nbsp;&nbsp;...\n&nbsp;&nbsp;&nbsp;&nbsp;release_USA:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;release_France:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;release_Italy:&nbsp;ISODate(\"2017-08-17T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;...\n}</pre><p><br></p><p>You want to redesign your document structure as below:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;game:&nbsp;\"Fishing&nbsp;Clash\",\n&nbsp;&nbsp;&nbsp;&nbsp;company:&nbsp;\"Ten&nbsp;Square&nbsp;Games\",\n&nbsp;&nbsp;&nbsp;&nbsp;platforms:&nbsp;['Android',&nbsp;'IOS'],\n&nbsp;&nbsp;&nbsp;&nbsp;…\n&nbsp;&nbsp;&nbsp;&nbsp;releases:&nbsp;[\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location:&nbsp;\"USA\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\")\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location:&nbsp;\"France\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\")\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;location:&nbsp;\"Italy\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date:&nbsp;ISODate(\"2017-08-17T01:00:00+01:00\")\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;…&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;],\n&nbsp;&nbsp;&nbsp;&nbsp;…&nbsp;\n}</pre><p><br></p><p>Which pattern solution will you use to solve this problem?</p>","relatedLectureIds":"","feedbacks":["","","","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-attribute-pattern</p>","answers":["<p>The Attribute Pattern.</p>","<p>The Bucket Pattern.</p>","<p>The Extended Reference Pattern.</p>","<p>The Subset Pattern.</p>","<p>The Schema Versioning Pattern.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:01:35Z","section":""},{"_class":"assessment","id":44973794,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Suppose you have a <em>mobile_games</em> collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;game:&nbsp;\"Fishing&nbsp;Clash\",\n&nbsp;&nbsp;&nbsp;&nbsp;company:&nbsp;\"Ten&nbsp;Square&nbsp;Games\",\n&nbsp;&nbsp;&nbsp;&nbsp;platforms:&nbsp;['Android',&nbsp;'IOS'],\n&nbsp;&nbsp;&nbsp;&nbsp;...\n&nbsp;&nbsp;&nbsp;&nbsp;release_USA:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;release_France:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;release_Italy:&nbsp;ISODate(\"2017-08-17T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;...\n}</pre><p><br></p><p>Are there any problems with this document structure?</p>","relatedLectureIds":"","feedbacks":["",""],"explanation":"<p>https://docs.mongodb.com/manual/core/document/</p>","answers":["<p>Yes, a search for a release date will require looking across many fields at once which is inefficient.</p>","<p>No, everything is correct. There is no room for improvement.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:01:43Z","section":""},{"_class":"assessment","id":44973796,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Suppose you have a <em>mobile_games</em> collection with the following document structure to redesign:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;&nbsp;&nbsp;game:&nbsp;\"Fishing&nbsp;Clash\",\n&nbsp;&nbsp;&nbsp;&nbsp;company:&nbsp;\"Ten&nbsp;Square&nbsp;Games\",\n&nbsp;&nbsp;&nbsp;&nbsp;platforms:&nbsp;['Android',&nbsp;'IOS'],\n&nbsp;&nbsp;&nbsp;&nbsp;...\n&nbsp;&nbsp;&nbsp;&nbsp;release_USA:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;release_France:&nbsp;ISODate(\"2017-04-09T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;release_Italy:&nbsp;ISODate(\"2017-08-17T01:00:00+01:00\"),\n&nbsp;&nbsp;&nbsp;&nbsp;...\n}</pre><p><br></p><p>Which pattern solution is best suited for this situation?</p>","relatedLectureIds":"","feedbacks":["","","","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-attribute-pattern</p>","answers":["<p>The Attribute Pattern.</p>","<p>The Bucket Pattern.</p>","<p>The Extended Reference Pattern.</p>","<p>The Subset Pattern.</p>","<p>There is no need to redesign the document structure.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:01:52Z","section":""},{"_class":"assessment","id":44973798,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Use case: e-learning platform </p><p><br></p><p>Which of the following scenarios is <strong>the best candidate</strong> to use the Extended Reference Pattern to avoid additional reads by joins/lookups?</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-extended-reference-pattern</p>","answers":["<p>Our app needs to retrieve a course and information about its instructor.</p>","<p>Our app needs to retrieve a course and its ten most recent reviews.</p>","<p>A course model needs to store a counter representing the number of times it was purchased.</p>","<p>A course model needs to store references to image of the course that are kept in an external location outside the database.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:02:12Z","section":""},{"_class":"assessment","id":44973800,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Use case: e-learning platform </p><p><br></p><p>Which of the following scenarios is <strong>the best candidate</strong> to use the Subset Pattern?</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-subset-pattern</p>","answers":["<p>Our app needs to retrieve a course and its ten most recent reviews.</p>","<p>Our app needs to retrieve a course and information about its instructor.</p>","<p>A course model needs to store a counter representing the number of times it was purchased.</p>","<p>A course model needs to store references to image of the course that are kept in an external location outside the database.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:02:26Z","section":""},{"_class":"assessment","id":44973802,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Use case: e-learning platform </p><p><br></p><p>Which of the following scenarios is <strong>the best candidate</strong> to use the Computed Pattern?</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-computed-pattern</p>","answers":["<p>A course model needs to store a counter representing the number of times it was purchased.</p>","<p>Our app needs to retrieve a course and its ten most recent reviews.</p>","<p>Our app needs to retrieve a course and information about its instructor.</p>","<p>A course model needs to store references to image of the course that are kept in an external location outside the database.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:02:38Z","section":""},{"_class":"assessment","id":44973804,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>We can use this pattern to work with different schema versions. It mainly involves adding a new field to the document structure, such as <code>schema_version</code>. This field will allow our application to know how to handle particular document.</p><p><br></p><p>Which pattern does this description apply to?</p>","relatedLectureIds":"","feedbacks":["","","","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-schema-versioning-pattern</p>","answers":["<p>The Schema Versioning Pattern.</p>","<p>The Outlier Pattern.</p>","<p>The Subset Pattern.</p>","<p>The Attribute Pattern.</p>","<p>The Polymorphic Pattern.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:02:52Z","section":""},{"_class":"assessment","id":44973806,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select scenarios that are best suited for applying the Schema Versioning Pattern.</p>","relatedLectureIds":"","feedbacks":["",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-schema-versioning-pattern</p>","answers":["<p>Your team was assigned to update the current schema with additional fields without shutting down the system for this upgrade. However, all documents need to be quickly updated.</p>","<p>There is a requirement to keep multiple versions of a document, and those versions can have different fields for each version in your application.</p>"]},"correct_response":["a","b"],"updated":"2022-03-16T09:02:58Z","section":""},{"_class":"assessment","id":44973808,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select true statements about data modeling in MongoDB.</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/data-modeling-introduction/</p>","answers":["<p>It's good data modeling practice to directly map each table from the relational model (normalized data) to the collection.</p>","<p>If one of your application's main queries is to retrieve related information from different collections, it is usually better to group that information into a single document.</p>","<p>To avoid having to join data in the application layer from different collections you can denormalize your data.</p>"]},"correct_response":["b","c"],"updated":"2022-03-16T09:03:14Z","section":""},{"_class":"assessment","id":44973810,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select all true statements regarding to schema validation in MongoDB.</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/schema-validation/</p>","answers":["<p>MongoDB doesn't provide the capability to perform schema validation during updates and insertions.</p>","<p>Validation rules are on a per-collection basis.</p>","<p>We need to use <code>db.createCollection()</code> with the <code>validator</code> option to specify validation rules for a new collection.</p>"]},"correct_response":["b","c"],"updated":"2022-03-16T09:03:30Z","section":""},{"_class":"assessment","id":44973812,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select all true statements regarding to transactions in MongoDB.</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/transactions/</p>","answers":["<p>The collections used in a transaction can be in different databases.</p>","<p>We cannot read/write to collections in the <code>config</code>, <code>admin</code>, or <code>local</code> databases.</p>","<p>Transactions are associated with a session.</p>"]},"correct_response":["a","b","c"],"updated":"2022-03-16T09:03:44Z","section":""},{"_class":"assessment","id":44973814,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select read concern levels that are supported by transactions in MongoDB.</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/transactions/#read-concern-write-concern-read-preference</p>","answers":["<pre class=\"prettyprint linenums\">local</pre>","<pre class=\"prettyprint linenums\">majority</pre>","<pre class=\"prettyprint linenums\">snapshot</pre>"]},"correct_response":["a","b","c"],"updated":"2022-03-16T09:03:59Z","section":""},{"_class":"assessment","id":44973816,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>What is data modeling in MongoDB world?</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/data-modeling-introduction/</p>","answers":["<p>A way to organize fields in a document to support your application performance and querying capabilities.</p>","<p>A way to build your application based on how your data is stored.</p>","<p>A way to decide whether to store your data in the cloud or locally.</p>","<p>A way to show your database with graphs.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:04:11Z","section":""},{"_class":"assessment","id":44973818,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>A social media company needs to implement a data model that describes te relationships between users. When loading real data into the system, it turned out that one user has too many contacts to store them in the designated array.</p><p>Instead of redesigning the entire system what pattern can you use?</p>","relatedLectureIds":"","feedbacks":["","","","",""],"explanation":"<p>https://www.mongodb.com/blog/post/building-with-patterns-the-outlier-pattern</p>","answers":["<p>The Outlier Pattern.</p>","<p>The Schema Versioning Pattern.</p>","<p>The Subset Pattern.</p>","<p>The Attribute Pattern.</p>","<p>The Extended Reference Pattern.</p>"]},"correct_response":["a"],"updated":"2022-03-16T09:04:29Z","section":""},{"_class":"assessment","id":44973820,"assessment_type":"multi-select","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>Select true statements about capped collections.</p>","relatedLectureIds":"","feedbacks":["","","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/capped-collections/</p>","answers":["<p>Capped collections are fixed-size collections.</p>","<p>If the collection is full, the oldest document in the collection is removed when a new document is added to the collection.</p>","<p>Capped collections guarantee preservation of the insertion order.</p>","<p>Capped collections automatically remove the oldest documents in the collection to make room for new documents.</p>"]},"correct_response":["a","b","c","d"],"updated":"2022-03-16T09:04:47Z","section":""},{"_class":"assessment","id":44973822,"assessment_type":"multiple-choice","created":"2022-03-16T08:55:05Z","prompt":{"question":"<p>What command can you use to create a capped collection named <em>latest_news </em>that will be limited to 3 documents and 10,000 bytes?</p>","relatedLectureIds":"","feedbacks":["","",""],"explanation":"<p>https://docs.mongodb.com/manual/core/capped-collections/</p>","answers":["<pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'capped':&nbsp;true,&nbsp;'size':&nbsp;10000,&nbsp;'max':&nbsp;3})</pre>","<pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'capped':&nbsp;true,&nbsp;'max':&nbsp;3})</pre>","<pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'size':&nbsp;10000,&nbsp;'max':&nbsp;3})</pre>"]},"correct_response":["a"],"updated":"2022-03-16T09:04:57Z","section":""}]}
+{
+    "count": 60,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "_class": "assessment",
+            "id": 56168812,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Use case: e-learning platform </p><p><br></p><p>Which of the following scenarios is <strong>the best candidate</strong> to use the Computed Pattern?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>https://www.mongodb.com/blog/post/building-with-patterns-the-computed-pattern</p>",
+                "answers": [
+                    "<p>A course model needs to store a counter representing the number of times it was purchased.</p>",
+                    "<p>Our app needs to retrieve a course and its ten most recent reviews.</p>",
+                    "<p>Our app needs to retrieve a course and information about its instructor.</p>",
+                    "<p>A course model needs to store references to image of the course that are kept in an external location outside the database.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Use case: e-learning platform Which of the following scenarios is the best candidate to use the Computed Pattern?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168814,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Select read concern levels that are supported by transactions in MongoDB. (select 3)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Transactions support the following read concern levels:</p><ul><li><p><code><strong>\"local\"</strong></code></p></li><li><p><code><strong>\"majority\"</strong></code></p></li><li><p><code><strong>\"snapshot\"</strong></code></p></li></ul><p><br></p><p>https://docs.mongodb.com/manual/core/transactions/#read-concern-write-concern-read-preference</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">local</pre>",
+                    "<pre class=\"prettyprint linenums\">majority</pre>",
+                    "<pre class=\"prettyprint linenums\">snapshot</pre>",
+                    "<pre class=\"prettyprint linenums\">config</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Select read concern levels that are supported by transactions in MongoDB. (select 3)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168816,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>A social media company needs to implement a data model that describes te relationships between users. When loading real data into the system, it turned out that one user has too many contacts to store them in the designated array. Instead of redesigning the entire system what pattern can you use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>https://www.mongodb.com/blog/post/building-with-patterns-the-outlier-pattern</p>",
+                "answers": [
+                    "<p>The Outlier Pattern.</p>",
+                    "<p>The Schema Versioning Pattern.</p>",
+                    "<p>The Subset Pattern.</p>",
+                    "<p>The Attribute Pattern.</p>",
+                    "<p>The Extended Reference Pattern.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "A social media company needs to implement a data model that describes te relationships between users. When loading real data into the system, it turned out that one user has too many contacts to store them in the designated array. Instead of redesigning the entire system what pattern can you use?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168818,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Select all true statements about capped collections. (select 2)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Capped collections are fixed-size collections that support high-throughput operations that insert and retrieve documents based on insertion order. Capped collections work in a way similar to circular buffers: once a collection fills its allocated space, it makes room for new documents by overwriting the oldest documents in the collection. Capped collections guarantee preservation of the insertion order. Capped collections automatically remove the oldest documents in the collection to make room for new documents.</p><p><br></p><p>https://docs.mongodb.com/manual/core/capped-collections/</p>",
+                "answers": [
+                    "<p>Capped collections are fixed-size collections.</p>",
+                    "<p>If the collection is full, the oldest document in the collection is removed when a new document is added to the collection.</p>",
+                    "<p>Capped collections don't guarantee preservation of the insertion order.</p>",
+                    "<p>Capped collections automatically remove the most recent documents in the collection to make room for new documents.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Select all true statements about capped collections. (select 2)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168820,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What command can you use to create a capped collection named <code>latest_news</code><em> </em>that will be limited to 3 documents and 10,000 bytes?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Capped collections are fixed-size collections that support high-throughput operations that insert and retrieve documents based on insertion order. Capped collections work in a way similar to circular buffers: once a collection fills its allocated space, it makes room for new documents by overwriting the oldest documents in the collection. Capped collections guarantee preservation of the insertion order. Capped collections automatically remove the oldest documents in the collection to make room for new documents.</p><p><br></p><p>https://docs.mongodb.com/manual/core/capped-collections/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'capped':&nbsp;true,&nbsp;'size':&nbsp;10000,&nbsp;'max':&nbsp;3})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'capped':&nbsp;true,&nbsp;'max':&nbsp;3})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'size':&nbsp;10000,&nbsp;'max':&nbsp;3})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;'capped':&nbsp;true,&nbsp;'size':&nbsp;10000,&nbsp;'max':&nbsp;3)</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What command can you use to create a capped collection named latest_news that will be limited to 3 documents and 10,000 bytes?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168822,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>The following capped collection is given: </p><p><br></p><pre class=\"prettyprint linenums\">db.createCollection('latest_news',&nbsp;{'capped':&nbsp;true,&nbsp;'size':&nbsp;10000,&nbsp;'max':&nbsp;3})</pre><p><br></p><pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e8007c9b3067e362440a88\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'COVID&nbsp;records&nbsp;broken&nbsp;again&nbsp;as&nbsp;weekend&nbsp;brings&nbsp;nearly&nbsp;40K&nbsp;new&nbsp;cases'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;}\n]</pre><p><br></p><p>What the <code>latest_news</code><em> </em>collection will look like after the following operation?</p><p><br></p><pre class=\"prettyprint linenums\">db.latest_news.insertOne({\n  title: \"TikTok&nbsp;owner&nbsp;ByteDance&nbsp;dissolves&nbsp;its&nbsp;investment&nbsp;arm\"\n})</pre><p><br></p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Capped collections are fixed-size collections that support high-throughput operations that insert and retrieve documents based on insertion order. Capped collections work in a way similar to circular buffers: once a collection fills its allocated space, it makes room for new documents by overwriting the oldest documents in the collection.</p><p><br></p><p>https://docs.mongodb.com/manual/core/capped-collections/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e801439b3067e362440a8b\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'TikTok&nbsp;owner&nbsp;ByteDance&nbsp;dissolves&nbsp;its&nbsp;investment&nbsp;arm'\n&nbsp;&nbsp;}\n]</pre>",
+                    "<pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e8007c9b3067e362440a88\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'COVID&nbsp;records&nbsp;broken&nbsp;again&nbsp;as&nbsp;weekend&nbsp;brings&nbsp;nearly&nbsp;40K&nbsp;new&nbsp;cases'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;}\n]</pre>",
+                    "<pre class=\"prettyprint linenums\">[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e8007c9b3067e362440a88\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'COVID&nbsp;records&nbsp;broken&nbsp;again&nbsp;as&nbsp;weekend&nbsp;brings&nbsp;nearly&nbsp;40K&nbsp;new&nbsp;cases'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e801439b3067e362440a8b\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'TikTok&nbsp;owner&nbsp;ByteDance&nbsp;dissolves&nbsp;its&nbsp;investment&nbsp;arm'\n&nbsp;&nbsp;}\n]</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "The following capped collection is given: db.createCollection('latest_news',&nbsp;{'capped':&nbsp;true,&nbsp;'size':&nbsp;10000,&nbsp;'max':&nbsp;3})[\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e8007c9b3067e362440a88\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'COVID&nbsp;records&nbsp;broken&nbsp;again&nbsp;as&nbsp;weekend&nbsp;brings&nbsp;nearly&nbsp;40K&nbsp;new&nbsp;cases'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800989b3067e362440a89\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Bitcoin,&nbsp;Ethereum,&nbsp;Dogecoin&nbsp;Face&nbsp;Fresh&nbsp;Round&nbsp;Of&nbsp;Regulatory&nbsp;Scrutiny'\n&nbsp;&nbsp;},\n&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;_id:&nbsp;ObjectId(\"61e800d19b3067e362440a8a\"),\n&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;'Where Six Meme Stock Investors Are Now'\n&nbsp;&nbsp;}\n]What the latest_news collection will look like after the following operation?db.latest_news.insertOne({\n  title: \"TikTok&nbsp;owner&nbsp;ByteDance&nbsp;dissolves&nbsp;its&nbsp;investment&nbsp;arm\"\n})",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168824,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p><code>ObjectId</code> is a special 12-byte BSON type that guarantees uniqueness within the collection. The <code>ObjectId</code> is generated based on... (select 4)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>ObjectId</code> is a special 12-byte BSON type that guarantees uniqueness within the collection. The <code>ObjectId</code> is generated based on timestamp, machine ID, process ID, and a process-local incremental counter. MongoDB uses <code>ObjectId</code> values as the default values for <code>_id</code> fields.</p>",
+                "answers": [
+                    "<p>timestamp</p>",
+                    "<p>machine ID</p>",
+                    "<p>process ID</p>",
+                    "<p>process-local incremental counter</p>",
+                    "<p>MongoDB version</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c",
+                "d"
+            ],
+            "section": "",
+            "question_plain": "ObjectId is a special 12-byte BSON type that guarantees uniqueness within the collection. The ObjectId is generated based on... (select 4)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168826,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Complete the following sentence.</p><p><br></p><p>Capped collections provide <code><em>_____</em></code><em> </em>management of inserted documents and efficiently support operations that insert and read documents based on insertion order.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Capped collections provide <em>first-in-first-out</em> (FIFO) management of inserted documents and efficiently support operations that insert and read documents based on insertion order.</p><p><br></p><p>https://www.mongodb.com/docs/manual/core/data-model-operations/</p>",
+                "answers": [
+                    "<p><em>first-in-first-out</em> (FIFO)</p>",
+                    "<p><em>last-in-first-out</em> (LIFO)</p>",
+                    "<p><em>first-expired-first-out</em> (FEFO)</p>",
+                    "<p><em>lowest-in-first-out</em> (LOFO)</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Complete the following sentence.Capped collections provide _____ management of inserted documents and efficiently support operations that insert and read documents based on insertion order.",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168828,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>In which of the following CRUD operations can you specify a write concern? Select all that apply.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Write concern describes the level of acknowledgment requested from MongoDB for write operations to a standalone <code>mongod</code> or to replica sets or to sharded clusters. All update and insert operations have write concern option. </p><p><br></p><p>https://docs.mongodb.com/manual/reference/write-concern/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.collection.insertOne()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.updateMany()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.find()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.insert()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.update()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "d",
+                "e"
+            ],
+            "section": "",
+            "question_plain": "In which of the following CRUD operations can you specify a write concern? Select all that apply.",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168830,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Suppose you have a <code>sales</code><em> </em>collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n  _id: ObjectId(\"5bd761dcae323e45a93ccfe8\"),\n  saleDate: ISODate(\"2015-03-23T21:06:49.506Z\"),\n  items: [\n    {\n      name: 'printer paper',\n      tags: [ 'office', 'stationary' ],\n      price: Decimal128(\"40.01\"),\n      quantity: 2\n    }\n    {\n      name: 'pens',\n      tags: [ 'writing', 'office', 'school', 'stationary' ],\n      price: Decimal128(\"56.12\"),\n      quantity: 5\n    },\n    {\n      name: 'notepad',\n      tags: [ 'office', 'writing', 'school' ],\n      price: Decimal128(\"18.47\"),\n      quantity: 2\n    }\n  ],\n  storeLocation: 'Denver',\n  couponUsed: true,\n  purchaseMethod: 'Online'\n}</pre><p><br></p><p>Which of the following queries will return all document sales with <code>'printer paper'</code> sold?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The <code>$elemMatch</code> operator matches documents that contain an array field with at least one element that matches all the specified query criteria.</p><p><br></p><pre class=\"prettyprint linenums\">{ &lt;field&gt;: { $elemMatch: { &lt;query1&gt;, &lt;query2&gt;, ... } } }</pre><p><br></p><p>https://docs.mongodb.com/manual/reference/operator/query/elemMatch/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.sales.find( { items: { $elemMatch: { name: 'printer paper' } } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.find( { items: { $match: { name: 'printer paper' } } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.find( { items: { elemMatch: { name: 'printer paper' } } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.find( { items: { $find: { name: 'printer paper' } } } )</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Suppose you have a sales collection with the following document structure:{\n  _id: ObjectId(\"5bd761dcae323e45a93ccfe8\"),\n  saleDate: ISODate(\"2015-03-23T21:06:49.506Z\"),\n  items: [\n    {\n      name: 'printer paper',\n      tags: [ 'office', 'stationary' ],\n      price: Decimal128(\"40.01\"),\n      quantity: 2\n    }\n    {\n      name: 'pens',\n      tags: [ 'writing', 'office', 'school', 'stationary' ],\n      price: Decimal128(\"56.12\"),\n      quantity: 5\n    },\n    {\n      name: 'notepad',\n      tags: [ 'office', 'writing', 'school' ],\n      price: Decimal128(\"18.47\"),\n      quantity: 2\n    }\n  ],\n  storeLocation: 'Denver',\n  couponUsed: true,\n  purchaseMethod: 'Online'\n}Which of the following queries will return all document sales with 'printer paper' sold?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168832,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Suppose you have a <code>books</code><em> </em>collection with <code>title</code><em> </em>field. Which of the following queries will return all books with a <code>title</code> ending in <code>'ian'</code>?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>$regex</code> operator provides regular expression capabilities for pattern matching strings in queries.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/operator/query/regex/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { title: { $regex: /.*ian$/ } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { title: { $regex: /.*ian/ } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { title: { $text: /.*ian$/ } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { title: { $regex: /ian/ } } )</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Suppose you have a books collection with title field. Which of the following queries will return all books with a title ending in 'ian'?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168834,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Suppose you have a <code>companies</code><em> </em>collection in your database. Only the following documents are stored in this collection:</p><p><br></p><pre class=\"prettyprint linenums\">{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da4\"),\n  name: 'Powerset',\n  category_code: 'search',\n  founded_year: 2006\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da5\"),\n  name: 'Technorati',\n  category_code: 'advertising',\n  founded_year: 2002\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da7\"),\n  name: 'AddThis',\n  category_code: 'advertising',\n  founded_year: 2004\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da8\"),\n  name: 'OpenX',\n  category_code: 'advertising',\n  founded_year: 2008\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297daa\"),\n  name: 'Sparter',\n  category_code: 'games_video',\n  founded_year: 2007\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297dac\"),\n  name: 'Veoh',\n  category_code: 'games_video',\n  founded_year: 2004\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297dae\"),\n  name: 'Thoof',\n  category_code: 'web',\n  founded_year: 2006\n}</pre><p><br></p><p>How many documents will be deleted when executing the following query?</p><p><br></p><pre class=\"prettyprint linenums\">db.companies.deleteMany( { \"category_code\": \"advertising\" } )</pre><p><br></p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>db.collection.deleteMany()</code> removes all documents that match the <code>filter</code> from a collection.</p><p><br></p><pre class=\"prettyprint linenums\">db.collection.deleteMany(\n   &lt;filter&gt;,\n   {\n      writeConcern: &lt;document&gt;,\n      collation: &lt;document&gt;\n   }\n)</pre><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.collection.deleteMany/</p>",
+                "answers": [
+                    "<p>3</p>",
+                    "<p>0</p>",
+                    "<p>4</p>",
+                    "<p>7</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Suppose you have a companies collection in your database. Only the following documents are stored in this collection:{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da4\"),\n  name: 'Powerset',\n  category_code: 'search',\n  founded_year: 2006\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da5\"),\n  name: 'Technorati',\n  category_code: 'advertising',\n  founded_year: 2002\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da7\"),\n  name: 'AddThis',\n  category_code: 'advertising',\n  founded_year: 2004\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297da8\"),\n  name: 'OpenX',\n  category_code: 'advertising',\n  founded_year: 2008\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297daa\"),\n  name: 'Sparter',\n  category_code: 'games_video',\n  founded_year: 2007\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297dac\"),\n  name: 'Veoh',\n  category_code: 'games_video',\n  founded_year: 2004\n},\n{\n  _id: ObjectId(\"52cdef7c4bab8bd675297dae\"),\n  name: 'Thoof',\n  category_code: 'web',\n  founded_year: 2006\n}How many documents will be deleted when executing the following query?db.companies.deleteMany( { \"category_code\": \"advertising\" } )",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168836,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Suppose you want to familiarize with a new collection and want to display a single document. Which collection method should you use in this case?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>db.collection.findOne(query, projection)</code> returns one document that satisfies the specified query criteria on the collection or view. If multiple documents satisfy the query, this method returns the first document according to the natural order which reflects the order of documents on the disk.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.collection.findOne/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.collection.findOne()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.getOne()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.find()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.explain()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Suppose you want to familiarize with a new collection and want to display a single document. Which collection method should you use in this case?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168838,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>What are some of the uses for the <code>$</code> sign in MQL (MongoDB Query Language)? (select 2)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>https://docs.mongodb.com/manual/core/dot-dollar-considerations/</p>",
+                "answers": [
+                    "<p><code>$</code> denotes an operator - all MQL operators have the <code>$</code> prefix.</p>",
+                    "<p>When <code>$</code> is used to prefix a field name, it represents the value stored in that field.</p>",
+                    "<p>The <code>$</code> sign has no special meaning in MQL.</p>",
+                    "<p>The <code>$</code> sign is used to calculate the average in MongoDB.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What are some of the uses for the $ sign in MQL (MongoDB Query Language)? (select 2)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168840,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Which of the following commands will successfully insert exactly <strong>two </strong>new documents into an empty <code>companies</code><em> </em>collection? (select 3)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The <code>insertMany()</code> method has the following syntax:</p><p><br></p><pre class=\"prettyprint linenums\">db.collection.insertMany(\n   [ &lt;document 1&gt; , &lt;document 2&gt;, ... ],\n   {\n      writeConcern: &lt;document&gt;,\n      ordered: &lt;boolean&gt;\n   }\n)</pre><p><br></p><p>Inserts multiple documents into a collection. Given an array of documents, <code>insertMany()</code> inserts each document in the array into the collection. By default documents are inserted in order. If <code>ordered</code> is set to false, documents are inserted in an unordered format and may be reordered by <code>mongod</code> to increase performance.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Twitter\"}\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Twitter\"}\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Twitter\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Tesla\"}\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Twitter\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Tesla\"}\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Twitter\"},&nbsp;\n    {\"_id\":&nbsp;1,&nbsp;\"name\":&nbsp;\"Apple\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"_id\":&nbsp;2,&nbsp;\"name\":&nbsp;\"Tesla\"}\n])</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Which of the following commands will successfully insert exactly two new documents into an empty companies collection? (select 3)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168842,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Suppose you insert the following documents into a <code>companies</code><em> </em>collection:</p><p><br></p><pre class=\"prettyprint linenums\">db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Twitter\"}\n])</pre><p><br></p><p>Select all true statements about this command. (select 3)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The <code>insertMany()</code> method has the following syntax:</p><p><br></p><pre class=\"prettyprint linenums\">db.collection.insertMany(\n   [ &lt;document 1&gt; , &lt;document 2&gt;, ... ],\n   {\n      writeConcern: &lt;document&gt;,\n      ordered: &lt;boolean&gt;\n   }\n)</pre><p><br></p><p>Inserts multiple documents into a collection. Given an array of documents, <code>insertMany()</code> inserts each document in the array into the collection. By default documents are inserted in order. If <code>ordered</code> is set to false, documents are inserted in an unordered format and may be reordered by <code>mongod</code> to increase performance.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.collection.insertMany/</p>",
+                "answers": [
+                    "<p>The <code>_id</code> field is not specified in any of these documents.</p>",
+                    "<p>MongoDB will automatically create an <code>_id</code> field for each document and it will be unique.</p>",
+                    "<p>This command will insert one document into the collection.</p>",
+                    "<p>This command will insert two documents into the collection.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Suppose you insert the following documents into a companies collection:db.companies.insertMany([\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Facebook\"},&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;{\"name\":&nbsp;\"Twitter\"}\n])Select all true statements about this command. (select 3)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168844,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following commands will add a collection that is stored in JSON file to a MongoDB cluster?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The <code>mongoimport</code> tool imports content from an Extended JSON, CSV, or TSV export created by <code>mongoexport</code>, or potentially, another third-party export tool.</p><p><br></p><p>https://docs.mongodb.com/database-tools/mongoimport/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">mongoimport</pre>",
+                    "<pre class=\"prettyprint linenums\">mongoexport</pre>",
+                    "<pre class=\"prettyprint linenums\">mongodump</pre>",
+                    "<pre class=\"prettyprint linenums\">mongostore</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which of the following commands will add a collection that is stored in JSON file to a MongoDB cluster?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168846,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>We have a <code>movies</code><em> </em>collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1390f29313caabcd6223\"),\n    genres: [ 'Comedy', 'Drama', 'Family' ],\n    title: 'The Poor Little Rich Girl',\n    released: ISODate(\"1917-03-05T00:00:00.000Z\"),\n    year: 1917,\n    imdb: { rating: 6.9, votes: 884, id: 8443 }\n}</pre><p><br></p><p>We need to extract all <code>'Crime'</code> movies from this collection. Which query should we use? (select 2)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>db.collection.find(query, projection)</code> selects documents in a collection or view and returns a cursor to the selected documents.</p><p><br></p><p>The <code>$in</code> operator selects the documents where the value of a field equals any value in the specified array. To specify an <code>$in</code> expression, use the following prototype:</p><p><br></p><pre class=\"prettyprint linenums\">{ field: { $in: [&lt;value1&gt;, &lt;value2&gt;, ... &lt;valueN&gt; ] } }</pre><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.collection.find/</p><p>https://www.mongodb.com/docs/manual/reference/operator/query/in/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { \"genres\": { \"$in\" : [\"Crime\"] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { \"genres\": \"Crime\" } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { \"genres\": { \"$nin\" : [\"Crime\"] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { \"genres\": { \"$equal\" : [\"Crime\"] } } )</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "section": "",
+            "question_plain": "We have a movies collection with the following document structure:{\n    _id: ObjectId(\"573a1390f29313caabcd6223\"),\n    genres: [ 'Comedy', 'Drama', 'Family' ],\n    title: 'The Poor Little Rich Girl',\n    released: ISODate(\"1917-03-05T00:00:00.000Z\"),\n    year: 1917,\n    imdb: { rating: 6.9, votes: 884, id: 8443 }\n}We need to extract all 'Crime' movies from this collection. Which query should we use? (select 2)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168848,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>We have a <code>movies</code><em> </em>collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1390f29313caabcd6223\"),\n    genres: [ 'Comedy', 'Drama', 'Family' ],\n    title: 'The Poor Little Rich Girl',\n    released: ISODate(\"1917-03-05T00:00:00.000Z\"),\n    year: 1917,\n    imdb: { rating: 6.9, votes: 884, id: 8443 }\n}</pre><p><br></p><p>We need to extract all movies from this collection where genres includes both <code>'Crime'</code> and <code>'Mystery'</code>. Which query should we use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The <code>$all</code> operator selects the documents where the value of a field is an array that contains all the specified elements. To specify an <code>$all</code> expression, use the following prototype:</p><p><br></p><pre class=\"prettyprint linenums\">{ &lt;field&gt;: { $all: [ &lt;value1&gt; , &lt;value2&gt; ... ] } }</pre><p><br></p><p>https://docs.mongodb.com/manual/reference/operator/query/all/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $all: [\"Crime\", \"Mystery\"] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $in: [\"Crime\", \"Mystery\"] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $nin: [\"Crime\", \"Mystery\"] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $any: [\"Crime\", \"Mystery\"] } } )</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "We have a movies collection with the following document structure:{\n    _id: ObjectId(\"573a1390f29313caabcd6223\"),\n    genres: [ 'Comedy', 'Drama', 'Family' ],\n    title: 'The Poor Little Rich Girl',\n    released: ISODate(\"1917-03-05T00:00:00.000Z\"),\n    year: 1917,\n    imdb: { rating: 6.9, votes: 884, id: 8443 }\n}We need to extract all movies from this collection where genres includes both 'Crime' and 'Mystery'. Which query should we use?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168850,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>We have a <code>movies</code><em> </em>collection with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    _id: ObjectId(\"573a1390f29313caabcd6223\"),\n    genres: [ 'Comedy', 'Drama', 'Family' ],\n    title: 'The Poor Little Rich Girl',\n    released: ISODate(\"1917-03-05T00:00:00.000Z\"),\n    year: 1917,\n    imdb: { rating: 6.9, votes: 884, id: 8443 }\n}</pre><p><br></p><p>We need to extract all movies from this collection where genres does not include <code>'Romance'</code>. Which query should we use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>https://docs.mongodb.com/manual/reference/operator/query/nin/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $nin: ['Romance'] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $in: ['Romance'] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $or: ['Romance'] } } )</pre>",
+                    "<pre class=\"prettyprint linenums\">db.movies.find( { genres: { $and: ['Romance'] } } )</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "We have a movies collection with the following document structure:{\n    _id: ObjectId(\"573a1390f29313caabcd6223\"),\n    genres: [ 'Comedy', 'Drama', 'Family' ],\n    title: 'The Poor Little Rich Girl',\n    released: ISODate(\"1917-03-05T00:00:00.000Z\"),\n    year: 1917,\n    imdb: { rating: 6.9, votes: 884, id: 8443 }\n}We need to extract all movies from this collection where genres does not include 'Romance'. Which query should we use?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168852,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Select all true statements regarding to <code>$out</code> stage. (select 3)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code><strong>$out</strong></code><strong> </strong>stage takes the documents returned by the aggregation pipeline and writes them to a specified collection. Starting in MongoDB 4.4, you can specify the output database. The <code>$out</code> stage must be <em>the last stage</em> in the pipeline. The <code>$out</code> operator lets the aggregation framework return result sets of any size.</p><p><br></p><p>Starting in MongoDB 4.4, <code>$out</code> can take a document to specify the output database as well as the output collection:</p><p><br></p><pre class=\"prettyprint linenums\">{ $out: { db: \"&lt;output-db&gt;\", coll: \"&lt;output-collection&gt;\" } }</pre><p><br></p><p>https://docs.mongodb.com/manual/reference/operator/aggregation/out/</p>",
+                "answers": [
+                    "<p><code>$out</code> operator will not overwrite an existing collection if specified.</p>",
+                    "<p>All indexes on an existing collection are rebuilt when <code>$out</code> overwrites the collection.</p>",
+                    "<p><code>$out</code> operator must be the last stage in a pipeline.</p>",
+                    "<p><code>$out</code> operator will create a new empty collection or overwrite an existing collection if the pipeline raises an error.</p>",
+                    "<p><code>$out</code> operator creates collections in the same database as the source collection.</p>"
+                ]
+            },
+            "correct_response": [
+                "b",
+                "c",
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Select all true statements regarding to $out stage. (select 3)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168854,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a MongoDB view?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A MongoDB view is a queryable object whose contents are defined by an aggregation pipeline on other collections or views. MongoDB does not persist the view contents to disk. A view's content is computed on-demand when a client queries the view. MongoDB can require clients to have permission to query the view. MongoDB does not support write operations against views.</p><p><br></p><p>https://docs.mongodb.com/manual/core/views/</p>",
+                "answers": [
+                    "<p>A MongoDB view is a queryable object whose contents are defined by an aggregation pipeline on other collections or views.</p>",
+                    "<p>MongoDB does not support views.</p>",
+                    "<p>It is a different name for collection.</p>",
+                    "<p>It's a built-in database to store users information.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is a MongoDB view?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168856,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Which of the following statements are true regarding MongoDB views? (select 4)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A MongoDB view is a queryable object whose contents are defined by an aggregation pipeline on other collections or views. MongoDB does not persist the view contents to disk. A view's content is computed on-demand when a client queries the view. MongoDB can require clients to have permission to query the view. MongoDB does not support write operations against views.</p><p><br></p><p>https://docs.mongodb.com/manual/core/views/</p>",
+                "answers": [
+                    "<p>MongoDB views themselves don't contain data.</p>",
+                    "<p>MongoDB views are created on demand and reflect the data in the source collection.</p>",
+                    "<p>Views are write only.</p>",
+                    "<p>Views are read only.</p>",
+                    "<p>Write operations to views will raise an error.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b",
+                "d",
+                "e"
+            ],
+            "section": "",
+            "question_plain": "Which of the following statements are true regarding MongoDB views? (select 4)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168858,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>You have the following index in a <code>movies</code><em> </em>collection:</p><p><br></p><pre class=\"prettyprint linenums\">{&nbsp;\"title\":&nbsp;1,&nbsp;\"imdb.rating\":&nbsp;-1,&nbsp;\"imdb.votes\":&nbsp;-1,&nbsp;\"type\":&nbsp;1&nbsp;}</pre><p><br></p><p>Can the following query use the given index for both filtering and sorting?</p><p><br></p><pre class=\"prettyprint linenums\">db.movies.find({\n   \"title\":\"James Bond\"\n}\").sort(\"{\n   \"imdb.rating\":1,\n   \"imdb.votes\":1\n})</pre><p><br></p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Yes, this query matches the equality in the query predicate with the index prefix and continues the prefix in the sort predicate moving the index backwards.</p><p><br></p><p>https://docs.mongodb.com/manual/indexes/</p>",
+                "answers": [
+                    "<p>Yes</p>",
+                    "<p>No</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "You have the following index in a movies collection:{&nbsp;\"title\":&nbsp;1,&nbsp;\"imdb.rating\":&nbsp;-1,&nbsp;\"imdb.votes\":&nbsp;-1,&nbsp;\"type\":&nbsp;1&nbsp;}Can the following query use the given index for both filtering and sorting?db.movies.find({\n   \"title\":\"James Bond\"\n}\").sort(\"{\n   \"imdb.rating\":1,\n   \"imdb.votes\":1\n})",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168860,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Select all true statements about the database scaling in MongoDB. (select 2)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><strong>Scalability </strong>is the ability to expand or contract the capacity of system resources in order to support the changing usage of your application. This can refer both to increasing and decreasing usage of the application. </p><p><strong>Vertical scaling</strong> refers to increasing the processing power of a single server or cluster. Additionally, there are increased costs with high-performance hardware, as costs do not scale linearly.</p><p><strong>Horizontal scaling</strong>, also known as scale-out, refers to bringing on additional nodes to share the load. When cost and/or machine limitations become an issue, be sure to consider <strong>horizontal scaling</strong>.</p><p><br></p><p>https://www.mongodb.com/databases/scaling</p>",
+                "answers": [
+                    "<p>Scaling horizontally is generally cheaper than scaling vertically.</p>",
+                    "<p>When scaling horizontally our scaling cost increases linearly.</p>",
+                    "<p>When scaling vertically our scaling cost increases linearly.</p>",
+                    "<p>MongoDB doesn't allow you to scale your clusters vertically by adding more resources to the cluster, or horizontally by partitioning the data via sharding.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Select all true statements about the database scaling in MongoDB. (select 2)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168862,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which collection method can you use to build the index?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>db.collection.createIndex(keys, options, commitQuorum)</code> creates indexes on collections.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.collection.createIndex/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.collection.createIndex()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.getIndexes()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.insert()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.create()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which collection method can you use to build the index?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168864,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which collection method do you need to use to drop a specific collection?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>db.collection.drop(&lt;options&gt;)</code> removes a collection or view from the database. The method also removes any indexes associated with the dropped collection.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.collection.drop/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.collection.drop()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.dropIndex()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.dropCollection()</pre>",
+                    "<pre class=\"prettyprint linenums\">db.collection.remove()</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which collection method do you need to use to drop a specific collection?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168866,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Suppose you have a following index for <code>football_palyers</code><em> </em>collection:</p><p><br></p><pre class=\"prettyprint linenums\">{ \"last_name\": 1, \"details.country\": 1, \"details.club\": 1, \"age\": 1 }</pre><p><br></p><p>Determine which queries are able to successfully use a given index for both filtering and sorting. (select 2)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<pre class=\"prettyprint linenums\">db.football_players.find(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"last_name\":&nbsp;\"Lewandowski\",&nbsp;\"details.country\":&nbsp;{&nbsp;\"$gt\":&nbsp;\"D\" }&nbsp;}\n).sort(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"details.country\":&nbsp;1&nbsp;}\n)</pre><p><br></p><p>Yes, because it uses the same field for equality and sorting.</p><p><br></p><pre class=\"prettyprint linenums\">db.football_players.find(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"last_name\":&nbsp;{&nbsp;\"$gte\":&nbsp;\"L\"&nbsp;}&nbsp;}\n).sort(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"details.club\":&nbsp;-1&nbsp;}\n)</pre><p><br></p><p>No, this query doesn't use equality on the index prefix.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.football_players.find(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"last_name\":&nbsp;\"Lewandowski\"&nbsp;}\n).sort(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"details.country\":&nbsp;1,&nbsp;\"details.club\":&nbsp;1&nbsp;}\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.football_players.find(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"last_name\":&nbsp;\"Lewandowski\",&nbsp;\"details.country\":&nbsp;{&nbsp;\"$gt\":&nbsp;\"D\" }&nbsp;}\n).sort(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"details.country\":&nbsp;1&nbsp;}\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.football_players.find(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"last_name\":&nbsp;{&nbsp;\"$gte\":&nbsp;\"L\"&nbsp;}&nbsp;}\n).sort(\n&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;\"details.club\":&nbsp;-1&nbsp;}\n)</pre>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Suppose you have a following index for football_palyers collection:{ \"last_name\": 1, \"details.country\": 1, \"details.club\": 1, \"age\": 1 }Determine which queries are able to successfully use a given index for both filtering and sorting. (select 2)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168868,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Complete the sentence below.</p><p><br></p><p>By default, all MongoDB user-created collections...</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>By default, all MongoDB user-created collections have an <code>_id</code> index.</p><p><br></p><p>https://docs.mongodb.com/manual/core/document/</p><p>https://docs.mongodb.com/manual/reference/method/ObjectId/</p>",
+                "answers": [
+                    "<p>have an <code>_id</code> index.</p>",
+                    "<p>have no index.</p>",
+                    "<p>have an <code>field_id</code> index.</p>",
+                    "<p>have an <code>_object</code> index.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Complete the sentence below.By default, all MongoDB user-created collections...",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168870,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Given the following example document from an <code>artists</code><em> </em>collection:</p><p><br></p><pre class=\"prettyprint linenums\">{\n&nbsp;&nbsp;_id:&nbsp;5,\n&nbsp;&nbsp;last_name:&nbsp;'Maurer',\n&nbsp;&nbsp;first_name:&nbsp;'Alfred',\n&nbsp;&nbsp;year_born:&nbsp;1868,\n&nbsp;&nbsp;year_died:&nbsp;1932,\n&nbsp;&nbsp;nationality:&nbsp;'USA'\n}</pre><p><br></p><p>And the following index:</p><p><br></p><pre class=\"prettyprint linenums\">db.artists.createIndex( { \"last_name\": 1, \"nationality\": 1 } )</pre><p><br></p><p>How MongoDB will handle the query below?</p><p><br></p><pre class=\"prettyprint linenums\">db.artists.find( { \"last_name\": /^O./ } )</pre><p><br></p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Indexes support the efficient execution of queries in MongoDB. Without indexes, MongoDB must perform a <em>collection scan</em>, i.e. scan every document in a collection, to select those documents that match the query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the number of documents it must inspect.</p><p><br></p><p>https://docs.mongodb.com/manual/indexes/</p>",
+                "answers": [
+                    "<p>As an index scan.</p>",
+                    "<p>MongoDB will need to do a collection scan.</p>",
+                    "<p>None of these.</p>",
+                    "<p>This query is incorrect.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Given the following example document from an artists collection:{\n&nbsp;&nbsp;_id:&nbsp;5,\n&nbsp;&nbsp;last_name:&nbsp;'Maurer',\n&nbsp;&nbsp;first_name:&nbsp;'Alfred',\n&nbsp;&nbsp;year_born:&nbsp;1868,\n&nbsp;&nbsp;year_died:&nbsp;1932,\n&nbsp;&nbsp;nationality:&nbsp;'USA'\n}And the following index:db.artists.createIndex( { \"last_name\": 1, \"nationality\": 1 } )How MongoDB will handle the query below?db.artists.find( { \"last_name\": /^O./ } )",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168872,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Assign typical operational tasks to the Database Administrator.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>https://www.mongodb.com/docs/manual/reference/built-in-roles/#database-administration-roles</p>",
+                "answers": [
+                    "<p>create index, create user</p>",
+                    "<p>write data, read data</p>",
+                    "<p>read data</p>",
+                    "<p>write data</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Assign typical operational tasks to the Database Administrator.",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168874,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>How to create a new user with the <code>root</code><em> </em>role named <code>root_user</code> with password <code>root123</code>?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>db.createUser(user, writeConcern)</code> creates a new user for the database on which the method is run. <code>db.createUser()</code> returns a <em>duplicate user</em> error if the user already exists on the database.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.createUser/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">use&nbsp;admin\ndb.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;\"root_user\",\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;\"root123\",\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[\"root\"]\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">use&nbsp;admin\ndb.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;\"root_user\",\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;\"root123\",\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[\"dbAdmin\"]\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">use&nbsp;admin\ndb.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;\"root_user\",\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;\"root123\",\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[\"clusterAdmin\"]\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">use&nbsp;admin\ndb.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;\"root_user\",\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;\"root123\",\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[\"dbAdminAnyDatabase\"]\n})</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "How to create a new user with the root role named root_user with password root123?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168876,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Which of the following actions are granted to the built-in <code>userAdmin</code><em> </em>role? (select 3)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>userAdmin</code> provides the ability to create and modify roles and users on the current database. Since the <code>userAdmin</code> role allows users to grant any privilege to any user, including themselves, the role also indirectly provides superuser access to either the database or, if scoped to the <code>admin</code> database, the cluster.</p><p><br></p><p>The <code>userAdmin</code> role explicitly provides the following actions:</p><ul><li><p><code>changeCustomData</code></p></li><li><p><code>changePassword</code></p></li><li><p><code>createRole</code></p></li><li><p><code>createUser</code></p></li><li><p><code>dropRole</code></p></li><li><p><code>dropUser</code></p></li><li><p><code>grantRole</code></p></li><li><p><code>revokeRole</code></p></li><li><p><code>setAuthenticationRestriction</code></p></li><li><p><code>viewRole</code></p></li><li><p><code>viewUser</code></p></li></ul><p><br></p><p>https://docs.mongodb.com/manual/reference/built-in-roles/#mongodb-authrole-userAdmin</p>",
+                "answers": [
+                    "<p>dropCollection</p>",
+                    "<p>createRole</p>",
+                    "<p>createUser</p>",
+                    "<p>dropUser</p>"
+                ]
+            },
+            "correct_response": [
+                "b",
+                "c",
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Which of the following actions are granted to the built-in userAdmin role? (select 3)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168878,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Suppose you are connected to <code>mongod</code><em> </em>instance that is already running on port 27000 as admin user. You have to create a new user for an application that has the <code>readWrite</code><em> </em>role. Use the <code>db.createUser()</code> command to create a user for a CRUD application.</p><p><br></p><p>The requirements for this user are:</p><p>-&gt;&nbsp;role: <code>readWrite</code><em> </em>on <code>esmartdata</code><em> </em>database</p><p>-&gt; username: <code>esmart</code></p><p>-&gt;&nbsp;password: <code>esmart123</code></p><p><br></p><p>Which command should you use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>db.createUser(user, writeConcern)</code> creates a new user for the database on which the method is run. <code>db.createUser()</code> returns a <em>duplicate user</em> error if the user already exists on the database.</p><p><br></p><p>https://docs.mongodb.com/manual/reference/method/db.createUser/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;'esmart',\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;'esmart123',\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[{role:&nbsp;'readWrite',&nbsp;db:&nbsp;'esmartdata'}]\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;'esmart',\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;'esmart123',\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[{role:&nbsp;'readWrite',&nbsp;db:&nbsp;''}]\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;'esmart',\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;'esmart123',\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[{role:&nbsp;'read',&nbsp;db:&nbsp;'esmartdata'}]\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.createUser({\n&nbsp;&nbsp;&nbsp;&nbsp;user:&nbsp;'esmart',\n&nbsp;&nbsp;&nbsp;&nbsp;pwd:&nbsp;'esmart123',\n&nbsp;&nbsp;&nbsp;&nbsp;roles:&nbsp;[{role:&nbsp;'read+write',&nbsp;db:&nbsp;'esmartdata'}]\n})</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Suppose you are connected to mongod instance that is already running on port 27000 as admin user. You have to create a new user for an application that has the readWrite role. Use the db.createUser() command to create a user for a CRUD application.The requirements for this user are:-&gt;&nbsp;role: readWrite on esmartdata database-&gt; username: esmart-&gt;&nbsp;password: esmart123Which command should you use?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168880,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Suppose you are connected to <code>mongod</code><em> </em>instance that is already running on port 27000 as admin user. You have to dump <code>reviews</code> collection from the <code>restaurants</code><em> </em>database to BSON file.</p><p><br></p><p>Which command should you use?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>mongodump</code> is a utility for creating a binary export of the contents of a database. <code>mongodump</code> can export data from either <code>mongod</code> or <code>mongos</code> instances; i.e. can export data from standalone, replica set, and sharded cluster deployments.</p><p><br></p><p>https://docs.mongodb.com/database-tools/mongodump/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">mongodump&nbsp;--db&nbsp;restaurants --collection&nbsp;reviews</pre>",
+                    "<pre class=\"prettyprint linenums\">mongodump&nbsp;--db&nbsp;reviews --collection&nbsp;restaurants</pre>",
+                    "<pre class=\"prettyprint linenums\">mongoexport&nbsp;--db&nbsp;restaurants --collection&nbsp;reviews</pre>",
+                    "<pre class=\"prettyprint linenums\">mongostore&nbsp;--db&nbsp;restaurants --collection&nbsp;reviews</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Suppose you are connected to mongod instance that is already running on port 27000 as admin user. You have to dump reviews collection from the restaurants database to BSON file.Which command should you use?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168882,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Select all true statements regarding to replication in MongoDB. (select 3)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Replication provides redundancy and increases data availability. With multiple copies of data on different database servers, replication provides a level of fault tolerance against the loss of a single database server.</p><p><br></p><p>The <strong>primary node </strong>receives all write operations.</p><p><br></p><p>When a primary does not communicate with the other members of the set for more than the configured <code>electionTimeoutMillis</code> period <strong>(10 seconds by default)</strong>, an eligible secondary calls for an election to nominate itself as the new primary.</p><p><br></p><p>https://docs.mongodb.com/manual/replication/</p>",
+                "answers": [
+                    "<p>In the event of failover, the nodes vote to select the new primary node.</p>",
+                    "<p>The secondary node receives all new write operations, and the secondary nodes stay up to date with the primary.</p>",
+                    "<p>Replication is the primary mechanism for providing high availability in MongoDB.</p>",
+                    "<p>An arbiter<em> </em>will always be an arbiter whereas a primary may step down and become a secondary and a secondary may become the primary during an election.</p>",
+                    "<p>When a primary does not communicate with the other members of the set for more than the configured <code>electionTimeoutMillis</code> period (100 seconds by default), an eligible secondary calls for an election to nominate itself as the new primary.</p>"
+                ]
+            },
+            "correct_response": [
+                "a",
+                "c",
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Select all true statements regarding to replication in MongoDB. (select 3)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168884,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>You have to launch a replica set with three members. For the first node you have the following <code>mongo1.conf</code> configuration file:</p><p><br></p><pre class=\"prettyprint linenums\">storage:\n&nbsp;&nbsp;dbPath:&nbsp;/var/mongodb/db/1\nnet:\n&nbsp;&nbsp;bindIp:&nbsp;localhost\n&nbsp;&nbsp;port:&nbsp;27000\nsecurity:\n&nbsp;&nbsp;authorization:&nbsp;enabled\nsystemLog:\n&nbsp;&nbsp;destination:&nbsp;file\n&nbsp;&nbsp;path:&nbsp;/var/mongodb/logs/mongod1.log\n&nbsp;&nbsp;logAppend:&nbsp;true\nprocessManagement:\n&nbsp;&nbsp;fork:&nbsp;true</pre><p><br></p><p>Update this configuration file so that this <em>mongod </em>instance:</p><p>-&gt; authenticates internally using the keyfile <code>/var/mongodb/pki/keyfile</code></p><p>-&gt;&nbsp;belongs to the replica set <code>repl-set-1</code></p><p><br></p><p>Which of the following configuration file should you choose?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>https://docs.mongodb.com/manual/reference/configuration-options/</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">storage:\n&nbsp;&nbsp;dbPath:&nbsp;/var/mongodb/db/1\nnet:\n&nbsp;&nbsp;bindIp:&nbsp;localhost\n&nbsp;&nbsp;port:&nbsp;27000\nsecurity:\n&nbsp;&nbsp;authorization:&nbsp;enabled\n&nbsp;&nbsp;keyFile:&nbsp;/var/mongodb/pki/keyfile\nsystemLog:\n&nbsp;&nbsp;destination:&nbsp;file\n&nbsp;&nbsp;path:&nbsp;/var/mongodb/logs/mongod1.log\n&nbsp;&nbsp;logAppend:&nbsp;true\nprocessManagement:\n&nbsp;&nbsp;fork:&nbsp;true\nreplication:\n&nbsp;&nbsp;replSetName:&nbsp;repl-set-1</pre>",
+                    "<pre class=\"prettyprint linenums\">storage:\n&nbsp;&nbsp;dbPath:&nbsp;/var/mongodb/db/1\nnet:\n&nbsp;&nbsp;bindIp:&nbsp;localhost\n&nbsp;&nbsp;port:&nbsp;27000\nsecurity:\n&nbsp;&nbsp;authorization:&nbsp;enabled\nsystemLog:\n&nbsp;&nbsp;destination:&nbsp;file\n&nbsp;&nbsp;path:&nbsp;/var/mongodb/logs/mongod1.log\n&nbsp;&nbsp;logAppend:&nbsp;true\nprocessManagement:\n&nbsp;&nbsp;fork:&nbsp;true\nkey:\n  keyFile:&nbsp;/var/mongodb/pki/keyfile\nreplication:\n&nbsp;&nbsp;replSetName:&nbsp;repl-set-1</pre>",
+                    "<pre class=\"prettyprint linenums\">storage:\n&nbsp;&nbsp;dbPath:&nbsp;/var/mongodb/db/1\nnet:\n&nbsp;&nbsp;bindIp:&nbsp;localhost\n&nbsp;&nbsp;port:&nbsp;27000\nsecurity:\n&nbsp;&nbsp;authorization:&nbsp;enabled\nsystemLog:\n&nbsp;&nbsp;destination:&nbsp;file\n&nbsp;&nbsp;path:&nbsp;/var/mongodb/logs/mongod1.log\n&nbsp;&nbsp;logAppend:&nbsp;true\nprocessManagement:\n&nbsp;&nbsp;fork:&nbsp;true\nrepl:\n&nbsp;&nbsp;replSetName:&nbsp;repl-set-1</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "You have to launch a replica set with three members. For the first node you have the following mongo1.conf configuration file:storage:\n&nbsp;&nbsp;dbPath:&nbsp;/var/mongodb/db/1\nnet:\n&nbsp;&nbsp;bindIp:&nbsp;localhost\n&nbsp;&nbsp;port:&nbsp;27000\nsecurity:\n&nbsp;&nbsp;authorization:&nbsp;enabled\nsystemLog:\n&nbsp;&nbsp;destination:&nbsp;file\n&nbsp;&nbsp;path:&nbsp;/var/mongodb/logs/mongod1.log\n&nbsp;&nbsp;logAppend:&nbsp;true\nprocessManagement:\n&nbsp;&nbsp;fork:&nbsp;trueUpdate this configuration file so that this mongod instance:-&gt; authenticates internally using the keyfile /var/mongodb/pki/keyfile-&gt;&nbsp;belongs to the replica set repl-set-1Which of the following configuration file should you choose?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168886,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>You have the following replica set configuration:</p><p><br></p><pre class=\"prettyprint linenums\">conf&nbsp;=&nbsp;{\n&nbsp;&nbsp;\"_id\":&nbsp;\"replset\",\n&nbsp;&nbsp;\"version\":&nbsp;1,\n&nbsp;&nbsp;\"protocolVersion\":&nbsp;1,\n&nbsp;&nbsp;\"members\":&nbsp;[\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"_id\":&nbsp;0,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"host\":&nbsp;\"192.168.120.24:27017\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"priority\":&nbsp;2,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"votes\":&nbsp;1\n&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"_id\":&nbsp;1,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"host\":&nbsp;\"192.168.120.24:27018\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"priority\":&nbsp;1,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"votes\":&nbsp;1\n&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"_id\":&nbsp;2,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"host\":&nbsp;\"192.168.120.24:27018\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"priority\":&nbsp;1,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"votes\":&nbsp;1\n&nbsp;&nbsp;&nbsp;&nbsp;}\n&nbsp;&nbsp;]\n}</pre><p><br></p><p>Select the true statements about this configuration.</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A <em>replica set</em> in MongoDB is a group of <code>mongod</code> processes that maintain the same data set. Replica sets provide redundancy and high availability, and are the basis for all production deployments.</p><p><br></p><p>https://docs.mongodb.com/manual/replication/#replication</p>",
+                "answers": [
+                    "<p>This configuration is incorrect. Host information must be unique for each member in a replica set.</p>",
+                    "<p>This configuration is incorrect. Replica set cannot have three members.</p>",
+                    "<p>This configuration is incorrect. You can only specify a priority of 0 or 1.</p>",
+                    "<p>This configuration is correct.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "You have the following replica set configuration:conf&nbsp;=&nbsp;{\n&nbsp;&nbsp;\"_id\":&nbsp;\"replset\",\n&nbsp;&nbsp;\"version\":&nbsp;1,\n&nbsp;&nbsp;\"protocolVersion\":&nbsp;1,\n&nbsp;&nbsp;\"members\":&nbsp;[\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"_id\":&nbsp;0,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"host\":&nbsp;\"192.168.120.24:27017\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"priority\":&nbsp;2,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"votes\":&nbsp;1\n&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"_id\":&nbsp;1,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"host\":&nbsp;\"192.168.120.24:27018\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"priority\":&nbsp;1,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"votes\":&nbsp;1\n&nbsp;&nbsp;&nbsp;&nbsp;},\n&nbsp;&nbsp;&nbsp;&nbsp;{\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"_id\":&nbsp;2,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"host\":&nbsp;\"192.168.120.24:27018\",\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"priority\":&nbsp;1,\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\"votes\":&nbsp;1\n&nbsp;&nbsp;&nbsp;&nbsp;}\n&nbsp;&nbsp;]\n}Select the true statements about this configuration.",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168888,
+            "assessment_type": "multi-select",
+            "prompt": {
+                "question": "<p>Given the following query:</p><p><br></p><pre class=\"prettyprint linenums\">db.coll.find({}).sort({\"product\":&nbsp;1,&nbsp;\"price\":&nbsp;1})</pre><p><br></p><p>Which two indexes improve the performance of this query the most? (select 2)</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p><code>{ v: 2, key: { product: -1, price: -1 }, name: 'product_-1_price_-1' }</code> -&gt; Correct.</p><p><br></p><p><code>{ v: 2, key: { product: 1, price: 1 }, name: 'product_1_price_1' }</code> -&gt; Correct.</p><p><br></p><p><code>{ v: 2, key: { price: -1, product: -1 }, name: 'price_-1_product_-1' }</code> -&gt; Incorrect. Compound index field order must match sort field order.</p><p><br></p><p><code>{ v: 2, key: { price: 1, product: 1 }, name: 'price_1_product_1' }</code> -&gt; Incorrect. Compound index field order must match sort field order.</p>",
+                "answers": [
+                    "<p><code>{ v: 2, key: { price: 1, product: 1 }, name: 'price_1_product_1' }</code> </p>",
+                    "<p><code>{ v: 2, key: { product: 1, price: 1 }, name: 'product_1_price_1' }</code> </p>",
+                    "<p><code>{ v: 2, key: { price: -1, product: -1 }, name: 'price_-1_product_-1' }</code> </p>",
+                    "<p><code>{ v: 2, key: { product: -1, price: -1 }, name: 'product_-1_price_-1' }</code> </p>"
+                ]
+            },
+            "correct_response": [
+                "b",
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Given the following query:db.coll.find({}).sort({\"product\":&nbsp;1,&nbsp;\"price\":&nbsp;1})Which two indexes improve the performance of this query the most? (select 2)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168890,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider the following MongoDB collection <code>employees</code>:</p><p><br></p><pre class=\"prettyprint linenums\">{\n   \"_id\": 1,\n   \"name\": \"John Doe\",\n   \"department\": \"Sales\",\n   \"salary\": 5000\n},\n{\n   \"_id\": 2,\n   \"name\": \"Jane Doe\",\n   \"department\": \"Marketing\",\n   \"salary\": 6000\n},\n{\n   \"_id\": 3,\n   \"name\": \"Jim Smith\",\n   \"department\": \"Sales\",\n   \"salary\": 4500\n}</pre><p><br></p><p>What is the query to find the maximum salary among employees in the <code>\"Sales\"</code> department?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct query:</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.aggregate([\n  { $match: { department: \"Sales\" } },\n  { $group: { _id: null, max_salary: { $max: \"$salary\" } } }\n])</pre>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.employees.aggregate([\n  { $match: { department: \"Sales\" } },\n  { $group: { _id: null, max_salary: { $max: \"$salary\" } } }\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.find({department: \"Sales\"}).max(\"salary\")</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.find({department: \"Sales\"}).sort({salary: -1}).limit(1)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.aggregate([\n  { $match: { department: \"Sales\" } },\n  { $group: { _id: \"$department\", max_salary: { $max: \"$salary\" } } }\n])</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Consider the following MongoDB collection employees:{\n   \"_id\": 1,\n   \"name\": \"John Doe\",\n   \"department\": \"Sales\",\n   \"salary\": 5000\n},\n{\n   \"_id\": 2,\n   \"name\": \"Jane Doe\",\n   \"department\": \"Marketing\",\n   \"salary\": 6000\n},\n{\n   \"_id\": 3,\n   \"name\": \"Jim Smith\",\n   \"department\": \"Sales\",\n   \"salary\": 4500\n}What is the query to find the maximum salary among employees in the \"Sales\" department?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168892,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of using Capped Collections in MongoDB?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>To enforce size limits on collections, automatically overwriting the oldest documents when the size limit is reached. -&gt;&nbsp;Correct.</p><p>Capped collections in MongoDB are a special type of collection that have a fixed size limit, and automatically overwrite the oldest documents when the size limit is reached. The main purpose of capped collections is to provide a high-performance, efficient mechanism for storing and retrieving a small, fixed number of documents. Because capped collections have a fixed size, MongoDB does not need to perform any time-consuming operations, such as resizing the underlying data file, when the size of the collection changes. This makes capped collections well-suited for use cases that require fast, real-time access to the latest data, such as logs or time-series data. Additionally, because capped collections automatically overwrite the oldest documents when the size limit is reached, they provide a way to implement a \"rolling window\" of data, where only the most recent data is stored and older data is automatically discarded.</p><p><br></p><p>https://www.mongodb.com/docs/manual/core/capped-collections/</p>",
+                "answers": [
+                    "<p>To ensure that documents in a collection have a unique value for a specific field.</p>",
+                    "<p>To enforce size limits on collections, automatically overwriting the oldest documents when the size limit is reached.</p>",
+                    "<p>To store the results of MapReduce operations, allowing you to persist the output of a MapReduce operation for future use.</p>",
+                    "<p>To enforce referential integrity constraints, ensuring that documents in a collection maintain relationships with documents in other collections.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "What is the purpose of using Capped Collections in MongoDB?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168894,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the role of sharding in MongoDB?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>To provide a mechanism for distributing data across multiple servers, allowing you to horizontally scale your database to handle larger amounts of data and higher levels of read/write traffic. -&gt; Correct.</p><p>Sharding in MongoDB is a mechanism for distributing data across multiple servers, allowing you to horizontally scale your database to handle larger amounts of data and higher levels of read/write traffic. Sharding works by dividing the data in a collection across multiple shards, each of which is a separate MongoDB instance. When you perform a query or write operation, MongoDB automatically routes the request to the appropriate shard based on the shard key, which is a field in the documents that determines which shard the document belongs to. By distributing the data across multiple shards, you can achieve improved performance, as each shard can be deployed on a separate machine and handle a portion of the read and write workload. This allows you to scale your database horizontally as your data grows, ensuring that you can handle increasing amounts of data and traffic while maintaining good performance and availability.</p>",
+                "answers": [
+                    "<p>To provide a mechanism for distributing data across multiple servers, allowing you to horizontally scale your database to handle larger amounts of data and higher levels of read/write traffic.</p>",
+                    "<p>To provide a way to enforce data consistency and transactional guarantees, ensuring that all write operations are atomic and all data remains in a consistent state.</p>",
+                    "<p>To automatically replicate data to multiple servers, ensuring high availability and durability of data in the event of a server failure.</p>",
+                    "<p>To optimize query performance by automatically splitting large data sets into smaller, more manageable pieces.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is the role of sharding in MongoDB?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168896,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the purpose of using replication in MongoDB?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>To automatically copy data from one server to multiple servers, ensuring high availability and durability of data in the event of a server failure. -&gt; Correct.</p><p>Replication in MongoDB is a mechanism for automatically copying data from one server to multiple servers, ensuring high availability and durability of data in the event of a server failure. Replication works by maintaining multiple copies of the data in a MongoDB cluster, with each copy stored on a separate server. The primary server, also known as the primary node, receives all write operations and replicates the data changes to secondary servers, also known as secondary nodes. If the primary node fails, one of the secondary nodes is automatically elected as the new primary, ensuring that the data remains available for read and write operations. By having multiple copies of the data, you can improve the reliability and availability of your database, as well as support disaster recovery scenarios in the event of a server failure. Additionally, you can use secondary nodes for read-only queries, helping to offload read traffic from the primary node and improve overall query performance.</p>",
+                "answers": [
+                    "<p>To automatically copy data from one server to multiple servers, ensuring high availability and durability of data in the event of a server failure.</p>",
+                    "<p>To provide a way to enforce data consistency and transactional guarantees, ensuring that all write operations are atomic and all data remains in a consistent state.</p>",
+                    "<p>To provide a mechanism for distributing data across multiple servers, allowing you to horizontally scale your database to handle larger amounts of data and higher levels of read/write traffic.</p>",
+                    "<p>To optimize query performance by automatically splitting large data sets into smaller, more manageable pieces.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is the purpose of using replication in MongoDB?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168898,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is the difference between a single field index and a compound index in MongoDB?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A single field index is created on a single field and provides optimized performance for queries that match on the indexed field, while a compound index is created on multiple fields and provides optimized performance for queries that match on multiple fields. -&gt; Correct.</p><p>In MongoDB, indexes can be created on one or more fields in a collection to improve the performance of queries. A single field index is created on a single field and provides optimized performance for queries that match on that field. A compound index, on the other hand, is created on multiple fields and provides optimized performance for queries that match on multiple fields. Compound indexes are useful in cases where you frequently query on multiple fields together, such as queries that include conditions on both the \"username\" and \"email\" fields in a user collection. By using a compound index, MongoDB can use the index to efficiently resolve the query without having to perform a full collection scan.</p>",
+                "answers": [
+                    "<p>A single field index is created on a single field and provides optimized performance for queries that <strong>match </strong>on the indexed field, while a compound index is created on multiple fields and provides optimized performance for queries that <strong>match </strong>on multiple fields.</p>",
+                    "<p>A single field index is created on a single field and provides optimized performance <strong>only </strong>for queries that <strong>sort </strong>on the indexed field, while a compound index is created on multiple fields and provides optimized performance <strong>only </strong>for queries that <strong>match </strong>on multiple fields.</p>",
+                    "<p>A single field index is created on a single field and provides optimized performance <strong>only </strong>for queries that <strong>sort </strong>on the indexed field, while a compound index is created on multiple fields and provides optimized performance <strong>only </strong>for queries that <strong>sort </strong>on multiple fields.</p>",
+                    "<p>A single field index is created on a single field and provides optimized performance <strong>only </strong>for queries that <strong>match </strong>on the indexed field, while a compound index is created on multiple fields and provides optimized performance <strong>only </strong>for queries that <strong>sort </strong>on multiple fields.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is the difference between a single field index and a compound index in MongoDB?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168900,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>In MongoDB, consider the following query:</p><p><br></p><pre class=\"prettyprint linenums\">db.collection.aggregate([\n    { $match: {\n        $and: [\n            { quantity: { $gt: 20 } },\n            { $or: [\n                { category: \"clothing\" },\n                { brand: \"Acme\" }\n            ] }\n        ]\n    } },\n    { $group: {\n        _id: \"$brand\",\n        total_quantity: { $sum: \"$quantity\" }\n    } },\n    { $sort: { total_quantity: -1 } }\n])</pre><p><br></p><p>What does this query do?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Filters documents from the collection where the quantity is greater than 20 and either the category is \"clothing\" or the brand is \"Acme\", groups the documents by brand, calculates the total quantity for each brand, and sorts the results in descending order of total quantity. -&gt; Correct.</p><p><br></p><p>The query performs the following operations:</p><ol><li><p><code><strong>$match</strong></code> stage: Filters documents from the collection using the logical operator <code><strong>$and</strong></code> to combine two conditions, the first being that the <code><strong>quantity</strong></code> must be greater than 20 and the second being that either the <code><strong>category</strong></code> must be \"clothing\" or the <code><strong>brand</strong></code> must be \"Acme\". The <code><strong>$or</strong></code> operator is used within the second condition to specify that either the <code><strong>category</strong></code> must be \"clothing\" or the <code><strong>brand</strong></code> must be \"Acme\".</p></li><li><p><code><strong>$group</strong></code> stage: Groups the filtered documents by <code><strong>brand</strong></code> and calculates the total quantity for each group using the <code><strong>$sum</strong></code> operator on the <code><strong>quantity</strong></code> field.</p></li><li><p><code><strong>$sort</strong></code> stage: Sorts the grouped results in descending order of <code><strong>total_quantity</strong></code>.</p></li></ol>",
+                "answers": [
+                    "<p>Groups documents from the collection by brand and calculates the total quantity for each brand, sorted in ascending order of total quantity.</p>",
+                    "<p>Groups documents from the collection by brand and calculates the average quantity for each brand, sorted in ascending order of average quantity.</p>",
+                    "<p>Filters documents from the collection where the quantity is less than or equal to 20 and either the category is not \"clothing\" or the brand is not \"Acme\", groups the documents by brand, calculates the total quantity for each brand, and sorts the results in ascending order of total quantity.</p>",
+                    "<p>Filters documents from the collection where the quantity is greater than 20 and either the category is \"clothing\" or the brand is \"Acme\", groups the documents by brand, calculates the total quantity for each brand, and sorts the results in descending order of total quantity.</p>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "In MongoDB, consider the following query:db.collection.aggregate([\n    { $match: {\n        $and: [\n            { quantity: { $gt: 20 } },\n            { $or: [\n                { category: \"clothing\" },\n                { brand: \"Acme\" }\n            ] }\n        ]\n    } },\n    { $group: {\n        _id: \"$brand\",\n        total_quantity: { $sum: \"$quantity\" }\n    } },\n    { $sort: { total_quantity: -1 } }\n])What does this query do?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168902,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a MongoDB collection named <code>sales</code> with the following document structure:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    \"_id\" : ObjectId(\"5f7f39d8dbdfgbcabcabcabc\"),\n    \"date\" : ISODate(\"2021-12-24T00:00:00.000Z\"),\n    \"region\" : \"North\",\n    \"category\" : \"electronics\",\n    \"item\" : \"laptop\",\n    \"price\" : 1000,\n    \"quantity\" : 5\n}</pre><p><br></p><p>You are required to retrieve the total sales value for the North region, which is calculated as the product of <code>price</code> and <code>quantity</code> for each document. The North region has millions of documents and you are concerned about the performance of the query. Which of the following query options is the most efficient in terms of performance?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct answer:</p><p><br></p><pre class=\"prettyprint linenums\">db.sales.aggregate([\n    { $match: { region: \"North\" } },\n    { $group: { _id: \"$_id\", total_sales: { $sum: \"$price\" * \"$quantity\" } } }\n]);</pre><p><br></p><p>This option performs a collection scan and a single <code>$group</code> stage, which calculates the product of <code>price</code> and <code>quantity</code> for each document and groups the results by the unique <code>_id</code> of each document, reducing the number of calculations performed and improving performance compared to the other options.</p><p><br></p><p><strong>Explanations: </strong></p><p><br></p><pre class=\"prettyprint linenums\">db.sales.find({\n    region: \"North\"\n}).forEach(function(doc) {\n    var sales = doc.price * doc.quantity;\n    // perform other operations on sales\n});</pre><p><br></p><p>This option performs a collection scan, which retrieves all the documents in the collection and performs the calculation on the client side, leading to poor performance when the collection is large.</p><p><br></p><pre class=\"prettyprint linenums\">db.sales.aggregate([\n    { $match: { region: \"North\" } },\n    { $group: { _id: null, total_sales: { $sum: \"$price\" * \"$quantity\" } } }\n]);</pre><p><br></p><p>This option performs a collection scan, calculates the product of <code><strong>price</strong></code> and <code><strong>quantity</strong></code> for each document, and groups the results by <code><strong>null</strong></code>, but the calculation of the product is done in the <code><strong>$group</strong></code> stage, which can cause performance issues because the calculation is performed for every document in the collection.</p><p><br></p><pre class=\"prettyprint linenums\">db.sales.aggregate([\n    { $match: { region: \"North\" } },\n    { $group: { _id: \"$_id\", total_sales: { $sum: \"$price\" * \"$quantity\" } } },\n    { $group: { _id: null, total_sales: { $sum: \"$total_sales\" } } }\n]);</pre><p><br></p><p>This option performs two <code><strong>$group</strong></code> stages, but the second <code><strong>$group</strong></code> stage is redundant because it only groups the results by <code><strong>null</strong></code> and calculates the sum of <code><strong>total_sales</strong></code>, which was already calculated in the first <code><strong>$group</strong></code> stage.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.sales.find({\n    region: \"North\"\n}).forEach(function(doc) {\n    var sales = doc.price * doc.quantity;\n    // perform other operations on sales\n});</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.aggregate([\n    { $match: { region: \"North\" } },\n    { $group: { _id: null, total_sales: { $sum: \"$price\" * \"$quantity\" } } }\n]);</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.aggregate([\n    { $match: { region: \"North\" } },\n    { $group: { _id: \"$_id\", total_sales: { $sum: \"$price\" * \"$quantity\" } } },\n    { $group: { _id: null, total_sales: { $sum: \"$total_sales\" } } }\n]);</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.aggregate([\n    { $match: { region: \"North\" } },\n    { $group: { _id: \"$_id\", total_sales: { $sum: \"$price\" * \"$quantity\" } } }\n]);</pre>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Consider a MongoDB collection named sales with the following document structure:{\n    \"_id\" : ObjectId(\"5f7f39d8dbdfgbcabcabcabc\"),\n    \"date\" : ISODate(\"2021-12-24T00:00:00.000Z\"),\n    \"region\" : \"North\",\n    \"category\" : \"electronics\",\n    \"item\" : \"laptop\",\n    \"price\" : 1000,\n    \"quantity\" : 5\n}You are required to retrieve the total sales value for the North region, which is calculated as the product of price and quantity for each document. The North region has millions of documents and you are concerned about the performance of the query. Which of the following query options is the most efficient in terms of performance?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168904,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>You are designing a MongoDB database to store information about a library system. The system should track the books in the library, the members who have borrowed books, and the loans themselves. Which of the following data models would best fit this requirement?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>One collection for books, one collection for members, and one collection for loans. Each loan document would contain references to the book and the member documents. -&gt; Correct. It uses references (i.e., ObjectIds) to link the loan documents with the book and member documents, which provides clear relationships between the different entities in the library system. This approach allows for efficient queries, indexing, and updates to the individual entities.<br></p><p>One collection for books, one collection for members, and one collection for loans. Each book document would contain an array of references to loan documents. -&gt; Incorrect. It stores an array of references to loan documents in each book document, which can lead to performance issues when retrieving information about a specific book or member due to the size of the loan arrays.</p><p><br></p><p>One collection for books and loans, with each document representing a loan and containing references to both the book and the member. -&gt; Incorrect. It combines information about books and loans into a single collection, which makes it difficult to separate and manage the information about each entity.</p><p><br></p><p>One collection for books, members, and loans, with each document representing a loan and containing embedded documents for both the book and the member.-&gt; Incorrect. It stores all information about loans, books, and members in a single document, which can lead to performance issues as the documents grow in size and complexity. It also makes it more difficult to update individual entities as the entire document would need to be updated in order to change any single piece of information. </p>",
+                "answers": [
+                    "<p>One collection for books, one collection for members, and one collection for loans. Each loan document would contain references to the book and the member documents.</p>",
+                    "<p>One collection for books, one collection for members, and one collection for loans. Each book document would contain an array of references to loan documents.</p>",
+                    "<p>One collection for books and loans, with each document representing a loan and containing references to both the book and the member.</p>",
+                    "<p>One collection for books, members, and loans, with each document representing a loan and containing embedded documents for both the book and the member.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "You are designing a MongoDB database to store information about a library system. The system should track the books in the library, the members who have borrowed books, and the loans themselves. Which of the following data models would best fit this requirement?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168906,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>You are designing a MongoDB database for a social media platform. The platform should track the users, their friends, and the posts that users make. Which of the following data models would best fit this requirement?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>One collection for users, one collection for friends, and one collection for posts. Each user document would contain an array of references to their friends and an array of references to the posts they have made. -&gt; Correct. This option separates the information about the users, their friends, and the posts into different collections, which provides clear relationships between the different entities in the social media platform. This approach allows for efficient queries, indexing, and updates to the individual entities. Each user document contains an array of references to their friends and posts, which provides a clear relationship between the user and their friends and posts.</p><p><br></p><p>One collection for users, one collection for friends, and one collection for posts. Each post document would contain a reference to the user who made the post. -&gt; Incorrect. This option stores the information about the posts and the users who made the posts in separate collections, making it difficult to retrieve information about a specific user and their posts.</p><p><br></p><p>One collection for users and posts, with each document representing a user and containing an array of embedded posts and an array of references to their friends. -&gt; Incorrect. This option combines information about users and posts into a single collection, making it difficult to separate and manage the information about each entity.</p><p><br></p><p>One collection for users, friends, and posts, with each document representing a user and containing embedded documents for their friends and an array of embedded documents for the posts they have made. -&gt; Incorrect. It stores all information about users, friends, and posts in a single document, which can lead to performance issues as the documents grow in size and complexity. It also makes it more difficult to update individual entities as the entire document would need to be updated in order to change any single piece of information.</p>",
+                "answers": [
+                    "<p>One collection for users, one collection for friends, and one collection for posts. Each post document would contain a reference to the user who made the post.</p>",
+                    "<p>One collection for users, one collection for friends, and one collection for posts. Each user document would contain an array of references to their friends and an array of references to the posts they have made.</p>",
+                    "<p>One collection for users and posts, with each document representing a user and containing an array of embedded posts and an array of references to their friends.</p>",
+                    "<p>One collection for users, friends, and posts, with each document representing a user and containing embedded documents for their friends and an array of embedded documents for the posts they have made.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "You are designing a MongoDB database for a social media platform. The platform should track the users, their friends, and the posts that users make. Which of the following data models would best fit this requirement?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168908,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a collection named <code>sales</code> that contains documents in the following format:</p><p><br></p><pre class=\"prettyprint linenums\">{\n   \"_id\" : ObjectId(\"5f5f95aae2e85f9e7b33be5a\"),\n   \"item\" : \"apple\",\n   \"price\" : 2.99,\n   \"quantity\" : 100,\n   \"date\" : ISODate(\"2022-02-01T08:00:00Z\")\n}</pre><p><br></p><p>How can you calculate the total revenue (price * quantity) generated by selling apples in the month of February 2022 using the MongoDB aggregation framework?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct query:</p><p><br></p><pre class=\"prettyprint linenums\">db.sales.aggregate([\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  },\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" * \"$quantity\" } } }\n])</pre><p><br></p><p>The correct pipeline starts by using the <code>$match</code> operator to filter the documents for the desired time range and item type (apples). The filtered documents are then passed to the <code>$group</code> stage, where the <code>_id</code> field is set to \"item\" and the totalRevenue is calculated as the sum of the product of price and quantity. </p><p><br></p><pre class=\"prettyprint linenums\">db.sales.aggregate([\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" * \"$quantity\" } } },\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  }\n])</pre><p><br></p><p>This option is incorrect because the <code>$match</code> stage is before the <code>$group</code> stage, which means that the aggregation would be grouping all documents, including those that don't match the desired criteria, and calculating the total revenue for all of them. </p><p><br></p><pre class=\"prettyprint linenums\">db.sales.aggregate([\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" } } },\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  }\n])</pre><p><br></p><p>This option is incorrect because it only calculates the sum of the price field, instead of the product of price and quantity. </p><p><br></p><pre class=\"prettyprint linenums\">db.sales.aggregate([\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  },\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" } } }\n])</pre><p><br></p><p>This option is similar to the previous one, but it would calculate the total revenue for all items, not just apples.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.sales.aggregate([\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" * \"$quantity\" } } },\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  }\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.aggregate([\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  },\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" * \"$quantity\" } } }\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.aggregate([\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" } } },\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  }\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.sales.aggregate([\n  {\n    $match: {\n      item: \"apple\",\n      date: {\n        $gte: ISODate(\"2022-02-01T00:00:00Z\"),\n        $lt: ISODate(\"2022-03-01T00:00:00Z\")\n      }\n    }\n  },\n  { $group: { _id: \"$item\", totalRevenue: { $sum: \"$price\" } } }\n])</pre>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Consider a collection named sales that contains documents in the following format:{\n   \"_id\" : ObjectId(\"5f5f95aae2e85f9e7b33be5a\"),\n   \"item\" : \"apple\",\n   \"price\" : 2.99,\n   \"quantity\" : 100,\n   \"date\" : ISODate(\"2022-02-01T08:00:00Z\")\n}How can you calculate the total revenue (price * quantity) generated by selling apples in the month of February 2022 using the MongoDB aggregation framework?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168910,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a collection named <code>orders</code> that contains documents in the following format:</p><p><br></p><pre class=\"prettyprint linenums\">{\n   \"_id\" : ObjectId(\"5f5f95aae2e85f9e7b33be5a\"),\n   \"customer_id\" : \"C001\",\n   \"item\" : \"shirt\",\n   \"price\" : 29.99,\n   \"quantity\" : 2,\n   \"date\" : ISODate(\"2022-03-01T08:00:00Z\")\n}</pre><p><br></p><p>How can you calculate the average price of items purchased by each customer using the MongoDB aggregation framework?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct query:</p><p><br></p><pre class=\"prettyprint linenums\">db.orders.aggregate([\n  {\n    $group: { _id: \"$customer_id\", avgPrice: { $avg: \"$price\" * \"$quantity\" } }\n  }\n])</pre><p><br></p><p>The correct pipeline groups the documents by the <code>\"customer_id\"</code> field, and calculates the average price as the average of the product of the <code>\"price\"</code> and <code>\"quantity\"</code> fields. </p><p><br></p><pre class=\"prettyprint linenums\">db.orders.aggregate([\n  { $group: { _id: \"$customer_id\", avgPrice: { $avg: \"$price\" } } },\n  { $match: { quantity: { $gt: 1 } } }\n])</pre><p><br></p><p>This option is incorrect because it uses the <code>$avg</code> operator to calculate the average of the <code>\"price\"</code> field, instead of the product of <code>\"price\"</code> and <code>\"quantity\"</code>. </p><p><br></p><pre class=\"prettyprint linenums\">db.orders.aggregate([\n  { $group: { _id: \"$customer_id\", avgPrice: { $sum: \"$price\" } } }\n])</pre><p><br></p><p>This option is incorrect because it calculates the sum of the <code>\"price\"</code> field, instead of the average. </p><p><br></p><pre class=\"prettyprint linenums\">db.orders.aggregate([\n  {\n    $group: { _id: \"$customer_id\", avgPrice: { $sum: \"$price\" * \"$quantity\" } }\n  }\n])</pre><p><br></p><p>This option is similar to the previous option, but calculates the sum of the product of <code>\"price\"</code> and <code>\"quantity\"</code>, instead of the average.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.orders.aggregate([\n  { $group: { _id: \"$customer_id\", avgPrice: { $avg: \"$price\" } } },\n  { $match: { quantity: { $gt: 1 } } }\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.orders.aggregate([\n  {\n    $group: { _id: \"$customer_id\", avgPrice: { $avg: \"$price\" * \"$quantity\" } }\n  }\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.orders.aggregate([\n  { $group: { _id: \"$customer_id\", avgPrice: { $sum: \"$price\" } } }\n])</pre>",
+                    "<pre class=\"prettyprint linenums\">db.orders.aggregate([\n  {\n    $group: { _id: \"$customer_id\", avgPrice: { $sum: \"$price\" * \"$quantity\" } }\n  }\n])</pre>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Consider a collection named orders that contains documents in the following format:{\n   \"_id\" : ObjectId(\"5f5f95aae2e85f9e7b33be5a\"),\n   \"customer_id\" : \"C001\",\n   \"item\" : \"shirt\",\n   \"price\" : 29.99,\n   \"quantity\" : 2,\n   \"date\" : ISODate(\"2022-03-01T08:00:00Z\")\n}How can you calculate the average price of items purchased by each customer using the MongoDB aggregation framework?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168912,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>How does MongoDB handle sorting on fields with arrays as values in a collection?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The arrays are sorted based on their first element. -&gt; Correct.</p><p>When sorting on fields that contain arrays as values in a MongoDB collection, MongoDB sorts the arrays based on their first element. This means that the documents in the collection will be sorted based on the first element of the arrays in the specified field. If the first elements of the arrays are of different data types, the sort will be based on the lexicographical order of the values. For example, the value <code>\"10\"</code> would be considered greater than <code>\"2\"</code> when sorted lexicographically, even though 2 is a smaller number than 10. To sort based on a different element within the arrays, you can use the aggregation framework to create a new field with the desired value for sorting and then sort on that field.</p>",
+                "answers": [
+                    "<p>The sort fails and returns an error.</p>",
+                    "<p>The arrays are sorted based on their length.</p>",
+                    "<p>The arrays are sorted based on their first element.</p>",
+                    "<p>The sort fails if the arrays contain elements of different data types.</p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "How does MongoDB handle sorting on fields with arrays as values in a collection?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168914,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following statements correctly inserts multiple documents into a MongoDB collection named <code>customers</code> while preserving the order of the inserted documents and ignoring any duplicates?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct answer:</p><p><br></p><pre class=\"prettyprint linenums\">db.customers.insertMany(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { ordered: true, duplicate: false }\n)</pre><p><br></p><p>In MongoDB, to insert multiple documents into a collection while preserving the order of the inserted documents and ignoring any duplicates, you can use the <code>insertMany()</code> method with the options <code>ordered</code> set to true and <code>duplicate</code> set to false. The syntax would be <code>db.collection_name.insertMany([{ document1 }, { document2 }, ..., { documentN }], { ordered: true, duplicate: false })</code> where <code>collection_name</code> is the name of the collection you want to insert into and each <code>{ document }</code> is a document you want to insert represented as a JavaScript object.</p><p><br></p><pre class=\"prettyprint linenums\">db.customers.insertMany(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { ordered: false, duplicate: true }\n)</pre><p><br></p><p>Setting <code>ordered</code> to false would not preserve the order of the inserted documents.</p><p><br></p><pre class=\"prettyprint linenums\">db.customers.insertMany(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { keepOrder: true, allowDuplicates: false }\n)</pre><p><br></p><p><code>keepOrder</code> and <code>allowDuplicates</code> are not valid options for the <code>insertMany()</code> method.</p><p><br></p><pre class=\"prettyprint linenums\">db.customers.insert(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { keepOrder: true, ignoreDuplicates: false }\n)</pre><p><br></p><p><code>insert()</code> is a method for inserting one document, not multiple documents, and <code>ignoreDuplicates</code> is not a valid option for the <code>insert()</code> method.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.customers.insertMany(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { ordered: true, duplicate: false }\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.customers.insertMany(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { ordered: false, duplicate: true }\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.customers.insertMany(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { keepOrder: true, allowDuplicates: false }\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.customers.insert(\n  [\n    { name: \"John Smith\", address: \"123 Main St.\" },\n    { name: \"Jane Doe\", address: \"456 Elm St.\" }\n  ],\n  { keepOrder: true, ignoreDuplicates: false }\n)</pre>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "Which of the following statements correctly inserts multiple documents into a MongoDB collection named customers while preserving the order of the inserted documents and ignoring any duplicates?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168916,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a MongoDB collection named <code>employees</code> which has documents in the following format:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"name\" : \"John Doe\",\n    \"department\" : \"Sales\",\n    \"position\" : \"Manager\",\n    \"salary\" : 75000\n}</pre><p><br></p><p>What is the correct syntax to update the <code>\"position\"</code> field of all documents in the <code>employees</code> collection to <code>\"Director\"</code> and the <code>\"salary\"</code> field to <code>80000</code> using the <code>$set</code> operator?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct answer:</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.updateMany({}, { $set: { \"position\": \"Director\", \"salary\": 80000 }})</pre><p><br></p><p>In MongoDB, to update fields in a document, you can use the <code>$set</code> operator. To update multiple documents that match a certain criteria, you would use the <code>updateMany()</code> method. In this case, the filter criteria is <code>\"{}\"</code>, which means that all documents in the <code>employees</code> collection will be updated.</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.updateMany({ $set: { position: \"Director\", salary: 80000 }})</pre><p><br></p><p>There is no filter criterion.</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.update({}, { $set: { position: \"Director\", salary: 80000 }})</pre><p><br></p><p><code>update()</code> is a method for updating a single document, not multiple documents.</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.update({ $set: { \"position\": \"Director\", \"salary\": 80000 }})</pre><p><br></p><p><code>update()</code> is a method for updating a single document, not multiple documents and also there is no filter criterion.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.employees.updateMany({ $set: { position: \"Director\", salary: 80000 }})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.updateMany({}, { $set: { \"position\": \"Director\", \"salary\": 80000 }})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.update({}, { $set: { position: \"Director\", salary: 80000 }})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.update({ $set: { \"position\": \"Director\", \"salary\": 80000 }})</pre>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Consider a MongoDB collection named employees which has documents in the following format:{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"name\" : \"John Doe\",\n    \"department\" : \"Sales\",\n    \"position\" : \"Manager\",\n    \"salary\" : 75000\n}What is the correct syntax to update the \"position\" field of all documents in the employees collection to \"Director\" and the \"salary\" field to 80000 using the $set operator?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168918,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a MongoDB collection named <code>products</code> which has documents in the following format:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"name\" : \"Smartphone\",\n    \"brand\" : \"Apple\",\n    \"category\" : \"Electronics\",\n    \"price\" : 1000,\n    \"discount\" : 0.1\n}</pre><p><br></p><p>What is the correct syntax to update the <code>\"price\"</code> field of all documents in the <code>products</code> collection by multiplying it with (1 - discount) using the <code>$set</code> operator and the <code>$multiply</code> operator?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct answer:</p><p><br></p><pre class=\"prettyprint linenums\">db.products.updateMany(\n  {},\n  {\n    $set: { price: { $multiply: [\"$price\", { $subtract: [1, \"$discount\"] }] } }\n  }\n)</pre><p><br></p><p>In MongoDB, to update a field in a document, you can use the <code>$set</code> operator with the <code>$multiply</code> operator to modify the value. The syntax for updating multiple documents that match a certain criteria would be <code>db.collection_name.updateMany({ filter }, { $set: { field: { $multiply: [ expression ] } } })</code> where <code>collection_name</code> is the name of the collection you want to update, <code>{ filter }</code> is the criteria to match the documents you want to update, <code>field</code> is the name of the field you want to update, and <code>expression</code> is the value you want to set it to. In this case, the filter is <code>\"{}\"</code>, meaning all documents in the <code>products</code> collection will be updated, the field is <code>\"price\"</code>, and the expression is <code>{ $multiply: [ \"$price\", { $subtract: [1, \"$discount\"] } ] }</code>, which will update the <code>\"price\"</code> field by multiplying it with (1 - discount).</p><p><br></p><pre class=\"prettyprint linenums\">db.products.updateMany(\n  {},\n  { $set: { price: { $multiply: [\"$price\", 1 - $discount] } } }\n)</pre><p><br></p><p>Subtract operation should be performed using the <code>$subtract</code> operator.</p><p><br></p><pre class=\"prettyprint linenums\">db.products.update(\n  {},\n  { $set: { price: { $multiply: [\"$price\", 1 - $discount] } } }\n)</pre><p><br></p><p><code>update()</code> is a method for updating a single document, not multiple documents and subtract operation should be performed using the <code>$subtract</code> operator.</p><p><br></p><pre class=\"prettyprint linenums\">db.products.update(\n  {},\n  {\n    $set: { price: { $multiply: [\"$price\", { $subtract: [1, \"$discount\"] }] } }\n  }\n)</pre><p><br></p><p><code>update()</code> is a method for updating a single document, not multiple documents.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.products.updateMany(\n  {},\n  { $set: { price: { $multiply: [\"$price\", 1 - $discount] } } }\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.updateMany(\n  {},\n  {\n    $set: { price: { $multiply: [\"$price\", { $subtract: [1, \"$discount\"] }] } }\n  }\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.update(\n  {},\n  { $set: { price: { $multiply: [\"$price\", 1 - $discount] } } }\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.update(\n  {},\n  {\n    $set: { price: { $multiply: [\"$price\", { $subtract: [1, \"$discount\"] }] } }\n  }\n)</pre>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Consider a MongoDB collection named products which has documents in the following format:{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"name\" : \"Smartphone\",\n    \"brand\" : \"Apple\",\n    \"category\" : \"Electronics\",\n    \"price\" : 1000,\n    \"discount\" : 0.1\n}What is the correct syntax to update the \"price\" field of all documents in the products collection by multiplying it with (1 - discount) using the $set operator and the $multiply operator?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168920,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a MongoDB collection named <code>employees</code> which has documents in the following format:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"name\" : \"Jane Doe\",\n    \"age\" : 32,\n    \"salary\" : 50000,\n    \"title\" : \"Manager\"\n}</pre><p><br></p><p>What is the correct syntax to find and update the first document in the <code>employees</code> collection where <code>\"title\"</code> is <code>\"Manager\"</code>, and increase the <code>\"salary\"</code> field by 10% using the <code>findAndModify</code> method?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct answer:</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.findAndModify(\n  { title: \"Manager\" },\n  { $inc: { salary: { $multiply: [\"$salary\", 0.1] } } }\n)</pre><p><br></p><p>The <code>findAndModify</code> method in MongoDB allows you to find and update a single document in a collection. The first argument to this method is the filter criteria for the document you want to modify, and the second argument is the update operation to perform on the matched document. In this case, the filter is <code>{ title: \"Manager\" }</code>, which matches the first document where <code>\"title\"</code> is <code>\"Manager\"</code>, and the update operation is <code>{ $inc: { salary: { $multiply: [ \"$salary\", 0.10 ] } } }</code>, which increases the <code>\"salary\"</code> field by 10%.</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.findAndModify({\n  query: { title: \"Manager\" },\n  update: { $set: { salary: { $multiply: [\"$salary\", 1.1] } } }\n})</pre><p><br></p><p><code>$set</code> operator would replace the entire <code>\"salary\"</code> field with the result of the expression, but in this case, you only want to increase the <code>\"salary\"</code> field by 10%.</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.findAndModify({\n  query: { title: \"Manager\" },\n  update: { $inc: { salary: { $multiply: [\"$salary\", 0.1] } } }\n})</pre><p><br></p><p>It specifies the <code>\"query\"</code> field in the first argument, which is not necessary.</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.findAndModify(\n  { title: \"Manager\" },\n  { $set: { salary: { $multiply: [\"$salary\", 1.1] } } }\n)</pre><p><br></p><p><code>$set</code> operator would replace the entire <code>\"salary\"</code> field with the result of the expression, but in this case, you only want to increase the <code>\"salary\"</code> field by 10%.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.employees.findAndModify({\n  query: { title: \"Manager\" },\n  update: { $set: { salary: { $multiply: [\"$salary\", 1.1] } } }\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.findAndModify({\n  query: { title: \"Manager\" },\n  update: { $inc: { salary: { $multiply: [\"$salary\", 0.1] } } }\n})</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.findAndModify(\n  { title: \"Manager\" },\n  { $set: { salary: { $multiply: [\"$salary\", 1.1] } } }\n)</pre>",
+                    "<pre class=\"prettyprint linenums\">db.employees.findAndModify(\n  { title: \"Manager\" },\n  { $inc: { salary: { $multiply: [\"$salary\", 0.1] } } }\n)</pre>"
+                ]
+            },
+            "correct_response": [
+                "d"
+            ],
+            "section": "",
+            "question_plain": "Consider a MongoDB collection named employees which has documents in the following format:{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"name\" : \"Jane Doe\",\n    \"age\" : 32,\n    \"salary\" : 50000,\n    \"title\" : \"Manager\"\n}What is the correct syntax to find and update the first document in the employees collection where \"title\" is \"Manager\", and increase the \"salary\" field by 10% using the findAndModify method?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168922,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a MongoDB collection named <code>products</code> which has documents in the following format:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"productId\" : 101,\n    \"name\" : \"Product A\",\n    \"categories\" : [\"Electronics\", \"Computers\"],\n    \"price\" : 450\n}</pre><p><br></p><p>What is the correct syntax to find all documents in the <code>products</code> collection where the <code>\"categories\"</code> array contains the value <code>\"Computers\"</code>?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Correct answer:</p><p><br></p><pre class=\"prettyprint linenums\">db.products.find({ categories: { $in: [\"Computers\"] } })</pre><p><br></p><p>The <code>$in</code> operator in MongoDB allows you to match documents where a field contains a specified value in an array. In this case, the filter is <code>{ categories: { $in: [\"Computers\"] } }</code>, which matches all documents where the \"categories\" array contains the value \"Computers\".</p><p><br></p><pre class=\"prettyprint linenums\">db.products.find({ categories: \"Computers\" })</pre><p><br></p><p>It only specifies the field and value to match, but not the <code>$in</code> operator, which is required to match an array field.</p><p><br></p><pre class=\"prettyprint linenums\">db.products.find({ \"categories\": { $eq: \"Computers\" } })</pre><p><br></p><p>The <code>$eq</code> operator is used to match equality, but not to match an array field.</p><p><br></p><pre class=\"prettyprint linenums\">db.products.find({ categories: { $contains: \"Computers\" } })</pre><p><br></p><p><code>$contains</code> is not a valid operator in MongoDB.</p>",
+                "answers": [
+                    "<pre class=\"prettyprint linenums\">db.products.find({ categories: \"Computers\" })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.find({ \"categories\": { $eq: \"Computers\" } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.find({ categories: { $in: [\"Computers\"] } })</pre>",
+                    "<pre class=\"prettyprint linenums\">db.products.find({ categories: { $contains: \"Computers\" } })</pre>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Consider a MongoDB collection named products which has documents in the following format:{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"productId\" : 101,\n    \"name\" : \"Product A\",\n    \"categories\" : [\"Electronics\", \"Computers\"],\n    \"price\" : 450\n}What is the correct syntax to find all documents in the products collection where the \"categories\" array contains the value \"Computers\"?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168924,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Consider a MongoDB collection named <code>employees</code> which has documents in the following format:</p><p><br></p><pre class=\"prettyprint linenums\">{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"employeeId\" : 301,\n    \"name\" : \"Jane Doe\",\n    \"department\" : \"Sales\",\n    \"salary\" : 5000,\n    \"hireDate\" : ISODate(\"2020-01-01T00:00:00.000Z\")\n}</pre><p><br></p><p>What is the correct output for the following query in the <code>employees</code> collection?</p><p><br></p><pre class=\"prettyprint linenums\">db.employees.find().sort({salary: -1}).limit(2)</pre><p><br></p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>Documents with the highest and second highest salary in descending order. -&gt; Correct.</p><p>The query <code>db.employees.find().sort({salary: -1}).limit(2)</code> performs a sort operation on the <code>employees</code> collection, where the <code>sort</code> method sorts the documents based on the <code>\"salary\"</code> field in descending order (<code>{salary: -1}</code>). The <code>limit</code> method limits the number of documents returned to 2. Therefore, the query returns the 2 documents with the highest salary in descending order.</p>",
+                "answers": [
+                    "<p>Documents with the highest and second highest salary in ascending order.</p>",
+                    "<p>Documents with the highest and second highest salary in descending order.</p>",
+                    "<p>Documents with the lowest and second lowest salary in ascending order.</p>",
+                    "<p>Documents with the lowest and second lowest salary in descending order.</p>"
+                ]
+            },
+            "correct_response": [
+                "b"
+            ],
+            "section": "",
+            "question_plain": "Consider a MongoDB collection named employees which has documents in the following format:{\n    \"_id\" : ObjectId(\"5f5b0d2f3e3dfbcc11c84444\"),\n    \"employeeId\" : 301,\n    \"name\" : \"Jane Doe\",\n    \"department\" : \"Sales\",\n    \"salary\" : 5000,\n    \"hireDate\" : ISODate(\"2020-01-01T00:00:00.000Z\")\n}What is the correct output for the following query in the employees collection?db.employees.find().sort({salary: -1}).limit(2)",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168926,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>Which of the following MongoDB query operators is used to match a value in an array?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>The <code><strong>$in</strong></code> operator matches a specified value in an array and returns all documents that contain the specified value in the specified field. For example, the following query will return all documents where the field \"fruits\" contains the value \"apple\":</p><p><br></p><pre class=\"prettyprint linenums\">db.collection.find({\"fruits\": {\"$in\": [\"apple\"]}})</pre><p><br></p>",
+                "answers": [
+                    "<p><code>$ne</code> </p>",
+                    "<p><code>$gt</code> </p>",
+                    "<p><code>$in</code> </p>",
+                    "<p><code>$or</code> </p>"
+                ]
+            },
+            "correct_response": [
+                "c"
+            ],
+            "section": "",
+            "question_plain": "Which of the following MongoDB query operators is used to match a value in an array?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168928,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a MongoDB replica set and what is its purpose?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A MongoDB replica set is a group of <code>mongod</code> instances that host the same data set. The purpose of a replica set is to provide redundancy and high availability, and to allow for automatic failover in the event of a node failure. -&gt;&nbsp;Correct. </p><p>A MongoDB replica set is a group of two or more <code>mongod</code> instances that maintain the same data set. The purpose of a replica set is to provide redundancy and high availability, so that if one of the nodes fails, another node can take over automatically. This allows for continuous availability of the data and helps to ensure that there is no single point of failure in the system. The replica set also provides automatic failover for high availability, as well as automatic data synchronization between all nodes in the set.</p>",
+                "answers": [
+                    "<p>A MongoDB replica set is a group of <code>mongod</code> instances that host the same data set. The purpose of a replica set is to provide redundancy and high availability, and to allow for automatic failover in the event of a node failure.</p>",
+                    "<p>A MongoDB replica set is a group of <code>mongod</code> instances that host different data sets. The purpose of a replica set is to provide horizontal scaling for read operations.</p>",
+                    "<p>A MongoDB replica set is a group of <code>mongos</code> instances that route client requests to a sharded cluster. The purpose of a replica set is to provide redundancy and high availability for the sharded cluster.</p>",
+                    "<p>A MongoDB replica set is a single <code>mongod</code> instance that provides automatic failover in the event of a node failure. The purpose of a replica set is to provide redundancy and high availability for a standalone <code>mongod</code> instance.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is a MongoDB replica set and what is its purpose?",
+            "related_lectures": []
+        },
+        {
+            "_class": "assessment",
+            "id": 56168930,
+            "assessment_type": "multiple-choice",
+            "prompt": {
+                "question": "<p>What is a unique index in MongoDB, and what is its purpose?</p>",
+                "relatedLectureIds": "",
+                "feedbacks": [
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "explanation": "<p>A unique index in MongoDB is a special index that ensures that the values in a specified field are unique across all documents in a collection. The purpose of a unique index is to enforce data integrity and prevent duplicates. -&gt; Correct. </p><p>A unique index in MongoDB is a type of index that ensures that the values in a specified field are unique across all documents in a collection. When you create a unique index, MongoDB will enforce the unique constraint and prevent the insertion of duplicate values into the specified field. If a document with a duplicate value is inserted, MongoDB will return an error and prevent the insertion. The purpose of a unique index is to enforce data integrity and prevent duplicates, ensuring that the data in the collection is consistent and reliable. Unique indexes can be created on a single field or on multiple fields, and can be created on any collection.</p>",
+                "answers": [
+                    "<p>A unique index in MongoDB is a special index that ensures that the values in a specified field are unique across all documents in a collection. The purpose of a unique index is to enforce data integrity and prevent duplicates.</p>",
+                    "<p>A unique index in MongoDB is a special index that allows multiple documents in a collection to have the same value in a specified field. The purpose of a unique index is to improve query performance by allowing faster lookups.</p>",
+                    "<p>A unique index in MongoDB is a special index that ensures that the values in a specified field are unique across all collections in a database. The purpose of a unique index is to enforce data integrity and prevent duplicates.</p>",
+                    "<p>A unique index in MongoDB is a special index that allows multiple collections in a database to have the same value in a specified field. The purpose of a unique index is to improve query performance by allowing faster lookups.</p>"
+                ]
+            },
+            "correct_response": [
+                "a"
+            ],
+            "section": "",
+            "question_plain": "What is a unique index in MongoDB, and what is its purpose?",
+            "related_lectures": []
+        }
+    ]
+}
